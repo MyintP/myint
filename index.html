@@ -129,6 +129,27 @@
   .t-org { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; color: var(--faint); letter-spacing: 0.05em; }
   .chips { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
   .chip { font-family: 'IBM Plex Mono', monospace; font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); border: 1px solid var(--line); padding: 0.22rem 0.55rem; border-radius: 2px; }
+  #proof { border-top: 1px solid var(--line); }
+  .proof-lede { font-size: 0.98rem; line-height: 1.85; color: var(--dim); max-width: 860px; margin-top: 1.8rem; }
+  .proof-lede strong { color: var(--txt); font-weight: 600; }
+  .prows { display: flex; flex-direction: column; gap: 2px; margin-top: 3rem; }
+  .prow { display: grid; grid-template-columns: 1.2fr 0.7fr 1.3fr 1.3fr; gap: 1.5rem; align-items: baseline; background: var(--panel); border: 1px solid var(--line); padding: 1.4rem 1.8rem; transition: border-color 0.25s; }
+  .prow:hover { border-color: rgba(0,255,157,0.35); }
+  .prow-org { font-size: 0.95rem; font-weight: 600; color: var(--txt); }
+  .prow-period { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; color: var(--volt); letter-spacing: 0.08em; }
+  .prow-them { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; line-height: 1.7; color: var(--faint); letter-spacing: 0.04em; }
+  .prow-me { font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; color: var(--cyan); letter-spacing: 0.06em; }
+  .prow-head { background: transparent; border: none; padding: 0.4rem 1.8rem; }
+  .prow-head div { font-family: 'IBM Plex Mono', monospace; font-size: 0.56rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); }
+  .pstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 2px; }
+  .pstat { background: var(--panel); border: 1px solid var(--line); padding: 1.8rem 1.6rem; transition: border-color 0.25s; }
+  .pstat:hover { border-color: rgba(0,255,157,0.35); }
+  .pstat-num { font-family: 'IBM Plex Mono', monospace; font-size: 1.5rem; font-weight: 600; color: var(--volt); }
+  .pstat-label { font-size: 0.74rem; line-height: 1.65; color: var(--dim); margin-top: 0.6rem; }
+  .proof-quote { margin-top: 3rem; border-left: 2px solid var(--volt); padding-left: 1.8rem; }
+  .pq-text { font-size: 1.05rem; line-height: 1.8; color: var(--txt); }
+  .pq-attr { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; color: var(--faint); margin-top: 1rem; line-height: 1.8; }
+  @media (max-width: 960px) { .prow { grid-template-columns: 1fr; gap: 0.5rem; } .prow-head { display: none; } .pstats { grid-template-columns: 1fr 1fr; } }
   #creds { background: rgba(140,170,200,0.02); border-top: 1px solid var(--line); }
   .creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; }
   .cred { background: var(--panel); border: 1px solid var(--line); padding: 2.2rem 2rem; transition: border-color 0.25s; }
@@ -192,6 +213,7 @@
     <li><a href="#thesis">Thesis</a></li>
     <li><a href="#book">Books</a></li>
     <li><a href="#track">Track Record</a></li>
+    <li><a href="#proof">Proof</a></li>
     <li><a href="#creds">Credentials</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -397,10 +419,68 @@
   </div>
 </section>
 
+<!-- PROOF -->
+<section id="proof">
+  <div class="wrap">
+    <span class="sec-tag reveal">05 — The Proof</span>
+    <h2 class="sec-h reveal">Same three principals.<br>Four companies. <em>Fifteen years.</em></h2>
+    <p class="proof-lede reveal d1">Executives don't rehire an architect four times out of charity. From Kuala Lumpur to Silicon Valley to Brisbane, the same leadership trio ran the same play across four organisations on three continents — <strong>Chris Birrell</strong> (GM → CIO Blue Coat → SVP IT Symantec → Chairman Planet6) and <strong>Richard Scott</strong> (SVP Managed Services ABB → Program Director Symantec → Director of Operations Planet6) directed and governed. <strong>I architected and delivered.</strong> Same programs. Same period. Independently confirmable.</p>
+    <div class="prows reveal d2">
+      <div class="prow prow-head"><div>Organisation</div><div>Period</div><div>They directed</div><div>I architected</div></div>
+      <div class="prow">
+        <div class="prow-org">Mincom Malaysia</div>
+        <div class="prow-period">2009–2012</div>
+        <div class="prow-them">BIRRELL — GM MINCOM MALAYSIA</div>
+        <div class="prow-me">GLOBAL LEAD SOLUTIONS ARCHITECT</div>
+      </div>
+      <div class="prow">
+        <div class="prow-org">ABB / Ventyx</div>
+        <div class="prow-period">2010–2015</div>
+        <div class="prow-them">BIRRELL — GM TECHNICAL SERVICES<br>SCOTT — SVP MANAGED SERVICES</div>
+        <div class="prow-me">GLOBAL LEAD SA &amp; DELIVERY MANAGER</div>
+      </div>
+      <div class="prow">
+        <div class="prow-org">Blue Coat → Symantec</div>
+        <div class="prow-period">2014–2019</div>
+        <div class="prow-them">BIRRELL — CIO → SVP IT<br>SCOTT — PROGRAM DIRECTOR</div>
+        <div class="prow-me">GLOBAL DESIGN AUTHORITY</div>
+      </div>
+      <div class="prow">
+        <div class="prow-org">Planet6</div>
+        <div class="prow-period">2020–2022</div>
+        <div class="prow-them">BIRRELL — CHAIRMAN &amp; CO-FOUNDER<br>SCOTT — DIRECTOR OF OPERATIONS</div>
+        <div class="prow-me">PRINCIPAL CONSULTING SOLUTIONS ARCHITECT</div>
+      </div>
+    </div>
+    <div class="pstats reveal d3">
+      <div class="pstat">
+        <div class="pstat-num">15 in 9</div>
+        <div class="pstat-label">Hyper-converged edge locations stood up in nine months — a security platform driving US$100M+ in annual revenue.</div>
+      </div>
+      <div class="pstat">
+        <div class="pstat-num">US$30M+</div>
+        <div class="pstat-label">Saved per annum — 20 data centres retired globally through the cloud migration I architected.</div>
+      </div>
+      <div class="pstat">
+        <div class="pstat-num">US$35M+</div>
+        <div class="pstat-label">Annualised recurring savings across the program portfolio — confirmed at SVP and Program Director level.</div>
+      </div>
+      <div class="pstat">
+        <div class="pstat-num">1 exit</div>
+        <div class="pstat-label">Blue Coat prepared for exit and acquired by Symantec, 2016 — the alignment programs ran through my designs.</div>
+      </div>
+    </div>
+    <div class="proof-quote reveal d3">
+      <p class="pq-text">"Phil is the go-to person for high-value, business-critical projects. I have engaged him across Australia, Asia, and the USA. He takes accountability for quality, timelines, and outcomes."</p>
+      <div class="pq-attr">RICHARD SCOTT — FORMER SVP MANAGED SERVICES, ABB/VENTYX · PROGRAM DIRECTOR, SYMANTEC · DIRECTOR OF OPERATIONS, PLANET6</div>
+    </div>
+  </div>
+</section>
+
 <!-- CREDENTIALS -->
 <section id="creds">
   <div class="wrap">
-    <span class="sec-tag reveal">05 — Credentials</span>
+    <span class="sec-tag reveal">06 — Credentials</span>
     <h2 class="sec-h reveal">Certified across<br>the <em>full stack.</em></h2>
     <div class="creds-grid">
       <div class="cred reveal">
@@ -445,7 +525,7 @@
   <div class="wrap">
     <div class="founder-grid">
       <div class="reveal">
-        <span class="sec-tag">06 — The Founder</span>
+        <span class="sec-tag">07 — The Founder</span>
         <h2 class="sec-h">Phil<br><em>Myint.</em></h2>
         <div class="route">
           <b>Wellington</b> <span class="arrow">→</span> <b>London</b> <span class="arrow">→</span> <b>Brisbane</b> <span class="arrow">→</span> <b>The World</b>
