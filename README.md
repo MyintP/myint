@@ -28,4 +28,4 @@ Served as a static site at `myint.zencloud.com.au` from the `main` branch.
 There is no build or install step — the repository contents are published as-is.
 
 ---
-© 2026 ZenCloud Global Consultants. All rights reserved. Proprietary and confidential.
+© 2026 Zencloud Advisory. All rights reserved. Proprietary and confidential.
