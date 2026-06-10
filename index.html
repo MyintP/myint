@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phil Myint — Founder, ZenCloud Ecosystem</title>
+<meta name="description" content="Phil Myint — founder of the ZenCloud ecosystem: ZenCloud Advisory, StudioSix AI delivery, and the ZenCloud Velocity Architecture Framework. Strategy. Delivery. Architecture.">
+<link rel="canonical" href="https://myint.zencloud.com.au/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://myint.zencloud.com.au/">
+<meta property="og:title" content="Phil Myint — Founder, ZenCloud Ecosystem">
+<meta property="og:description" content="Founder of the ZenCloud ecosystem: ZenCloud Advisory, StudioSix AI delivery, and the ZenCloud Velocity Architecture Framework.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#050608">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050608'/%3E%3Ctext x='32' y='44' font-family='monospace' font-weight='700' font-size='30' fill='%2300ff9d' text-anchor='middle'%3EZ/%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #050608; --panel: #0a0d12; --line: rgba(140,170,200,0.10);
+    --txt: #e8edf2; --dim: #8a96a3; --faint: #4a545f;
+    --volt: #00ff9d; --volt-dim: rgba(0,255,157,0.12);
+    --cyan: #5ed1ff; --amber: #ffb454;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--void); color: var(--txt); font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
+  ::selection { background: var(--volt); color: var(--void); }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 0%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 0%, transparent 75%);
+    pointer-events: none; z-index: 0;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.1rem 2.5rem; background: rgba(5,6,8,0.82);
+    backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
+  }
+  .nav-mark { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; color: var(--txt); text-decoration: none; }
+  .nav-mark span { color: var(--volt); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+  .nav-links a { font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--dim); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--volt); }
+  .nav-status { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--volt); border: 1px solid rgba(0,255,157,0.25); background: var(--volt-dim); padding: 0.35rem 0.8rem; border-radius: 2px; }
+  .pulse-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--volt); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+  #hero { min-height: 100vh; display: grid; grid-template-columns: 1.25fr 1fr; gap: 4rem; align-items: center; padding: 8rem 4rem 5rem; max-width: 1440px; margin: 0 auto; position: relative; z-index: 1; }
+  .hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--volt); margin-bottom: 1.6rem; opacity: 0; animation: rise 0.7s 0.15s forwards; }
+  .hero-h1 { font-size: clamp(2.6rem, 5.2vw, 4.6rem); font-weight: 700; line-height: 1.04; letter-spacing: -0.025em; opacity: 0; animation: rise 0.8s 0.3s forwards; }
+  .hero-h1 em { font-style: normal; color: var(--volt); text-shadow: 0 0 32px rgba(0,255,157,0.35); }
+  .hero-sub { font-size: clamp(0.95rem, 1.4vw, 1.1rem); line-height: 1.75; color: var(--dim); max-width: 560px; margin-top: 1.8rem; opacity: 0; animation: rise 0.8s 0.5s forwards; }
+  .hero-sub strong { color: var(--txt); font-weight: 600; }
+  .hero-ctas { display: flex; gap: 1rem; margin-top: 2.6rem; flex-wrap: wrap; opacity: 0; animation: rise 0.8s 0.65s forwards; }
+  .btn { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; padding: 0.95rem 1.8rem; border-radius: 2px; transition: all 0.2s; }
+  .btn-volt { background: var(--volt); color: var(--void); font-weight: 600; box-shadow: 0 0 28px rgba(0,255,157,0.25); }
+  .btn-volt:hover { box-shadow: 0 0 44px rgba(0,255,157,0.5); transform: translateY(-2px); }
+  .btn-ghost { color: var(--txt); border: 1px solid rgba(140,170,200,0.25); }
+  .btn-ghost:hover { border-color: var(--volt); color: var(--volt); }
+  .term { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.5); opacity: 0; animation: rise 0.9s 0.8s forwards; }
+  .term-bar { display: flex; align-items: center; gap: 0.45rem; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); background: rgba(140,170,200,0.03); }
+  .term-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--faint); }
+  .term-dot:nth-child(1) { background: #ff5f57; }
+  .term-dot:nth-child(2) { background: var(--amber); }
+  .term-dot:nth-child(3) { background: var(--volt); }
+  .term-title { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--faint); margin-left: 0.6rem; letter-spacing: 0.08em; }
+  .term-body { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; line-height: 2.05; padding: 1.3rem 1.4rem; color: var(--dim); min-height: 285px; }
+  .term-body .ln { display: block; white-space: pre-wrap; }
+  .term-body .p { color: var(--volt); }
+  .term-body .c { color: var(--cyan); }
+  .term-body .a { color: var(--amber); }
+  .term-body .ok { color: var(--volt); }
+  .caret { display: inline-block; width: 7px; height: 13px; background: var(--volt); vertical-align: -2px; animation: pulse 1s steps(1) infinite; }
+  #metrics { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(140,170,200,0.02); position: relative; z-index: 1; }
+  .metrics-inner { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
+  .metric { padding: 2.6rem 2rem; border-left: 1px solid var(--line); text-align: center; }
+  .metric:first-child { border-left: none; }
+  .metric-num { font-family: 'IBM Plex Mono', monospace; font-size: clamp(2rem, 3.4vw, 3rem); font-weight: 600; color: var(--txt); }
+  .metric-num b { color: var(--volt); font-weight: 600; }
+  .metric-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); margin-top: 0.55rem; }
+  section { position: relative; z-index: 1; }
+  .wrap { max-width: 1440px; margin: 0 auto; padding: 7rem 4rem; }
+  .sec-tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.63rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--volt); display: block; margin-bottom: 1.1rem; }
+  .sec-h { font-size: clamp(2rem, 3.8vw, 3.4rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
+  .sec-h em { font-style: normal; color: var(--volt); }
+  #ecosystem { background: rgba(140,170,200,0.02); border-bottom: 1px solid var(--line); }
+  .eco-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; }
+  .card { background: var(--panel); border: 1px solid var(--line); padding: 2.6rem 2.4rem; position: relative; overflow: hidden; transition: border-color 0.25s; display: flex; flex-direction: column; }
+  .card:hover { border-color: rgba(0,255,157,0.35); }
+  .card:hover .card-glow { opacity: 1; }
+  .card-glow { position: absolute; top: -60px; right: -60px; width: 180px; height: 180px; background: radial-gradient(circle, rgba(0,255,157,0.12) 0%, transparent 70%); opacity: 0; transition: opacity 0.4s; pointer-events: none; }
+  .card-tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); display: inline-block; border: 1px solid var(--line); padding: 0.25rem 0.6rem; border-radius: 2px; margin-bottom: 1.5rem; width: fit-content; }
+  .card-tag.live { color: var(--volt); border-color: rgba(0,255,157,0.3); background: var(--volt-dim); }
+  .card-role { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cyan); margin-bottom: 0.6rem; }
+  .card-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.8rem; }
+  .card-body { font-size: 0.84rem; line-height: 1.8; color: var(--dim); flex: 1; }
+  .card-link { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--volt); text-decoration: none; display: inline-block; margin-top: 1.6rem; }
+  .card-link:hover { text-decoration: underline; }
+  .eco-flow { margin-top: 2px; background: var(--panel); border: 1px solid var(--line); padding: 1.4rem 2.4rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); text-align: center; }
+  .eco-flow b { color: var(--txt); font-weight: 500; }
+  .eco-flow .arrow { color: var(--volt); margin: 0 0.8rem; }
+  .thesis-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 5rem; align-items: start; }
+  .thesis-left { position: sticky; top: 7rem; }
+  .thesis-note { font-size: 0.95rem; line-height: 1.85; color: var(--dim); margin-top: 1.8rem; border-left: 2px solid var(--volt); padding-left: 1.4rem; }
+  .principles { display: flex; flex-direction: column; gap: 2px; }
+  .principle { display: grid; grid-template-columns: 70px 1fr; gap: 1.8rem; background: var(--panel); border: 1px solid var(--line); padding: 2.2rem 2.4rem; transition: border-color 0.25s, transform 0.25s; }
+  .principle:hover { border-color: rgba(0,255,157,0.35); transform: translateX(6px); }
+  .pr-num { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--volt); padding-top: 0.3rem; }
+  .pr-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.6rem; }
+  .pr-body { font-size: 0.84rem; line-height: 1.8; color: var(--dim); }
+  #book { background: rgba(140,170,200,0.02); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .book-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: center; }
+  .book-quote { font-size: 1.15rem; line-height: 1.85; color: var(--dim); border-left: 2px solid var(--volt); padding-left: 1.6rem; margin-top: 1.8rem; }
+  .book-quote b { color: var(--txt); font-weight: 600; }
+  .book-facts { display: flex; flex-direction: column; gap: 2px; }
+  .bf { display: grid; grid-template-columns: 140px 1fr; gap: 1.5rem; background: var(--panel); border: 1px solid var(--line); padding: 1.4rem 1.8rem; font-size: 0.84rem; }
+  .bf-k { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cyan); padding-top: 0.2rem; }
+  .bf-v { color: var(--dim); line-height: 1.7; }
+  .bf-v b { color: var(--txt); font-weight: 600; }
+  .track { margin-top: 3.5rem; display: flex; flex-direction: column; }
+  .t-row { display: grid; grid-template-columns: 150px 1fr auto; gap: 2.5rem; align-items: baseline; padding: 1.7rem 0; border-bottom: 1px solid var(--line); transition: padding-left 0.2s; }
+  .t-row:hover { padding-left: 0.7rem; }
+  .t-period { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; color: var(--volt); letter-spacing: 0.08em; }
+  .t-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .t-org { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; color: var(--faint); letter-spacing: 0.05em; }
+  .chips { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
+  .chip { font-family: 'IBM Plex Mono', monospace; font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); border: 1px solid var(--line); padding: 0.22rem 0.55rem; border-radius: 2px; }
+  #creds { background: rgba(140,170,200,0.02); border-top: 1px solid var(--line); }
+  .creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; }
+  .cred { background: var(--panel); border: 1px solid var(--line); padding: 2.2rem 2rem; transition: border-color 0.25s; }
+  .cred:hover { border-color: rgba(0,255,157,0.35); }
+  .cred-cat { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cyan); margin-bottom: 1.2rem; }
+  .cred-list { list-style: none; }
+  .cred-list li { font-size: 0.8rem; line-height: 1.65; color: var(--dim); padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
+  .cred-list li:last-child { border-bottom: none; }
+  .cred-list b { color: var(--txt); font-weight: 600; }
+  .cred-list .yr { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; color: var(--faint); margin-left: 0.4rem; }
+  .creds-foot { margin-top: 2px; background: var(--panel); border: 1px solid var(--line); padding: 1.3rem 2rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; letter-spacing: 0.1em; color: var(--faint); text-align: center; }
+  .creds-foot b { color: var(--volt); font-weight: 500; }
+  #founder { border-top: 1px solid var(--line); }
+  .founder-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start; }
+  .founder-body { font-size: 0.95rem; line-height: 1.9; color: var(--dim); }
+  .founder-body p { margin-bottom: 1.2rem; }
+  .founder-body strong { color: var(--txt); font-weight: 600; }
+  .route { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.64rem; letter-spacing: 0.08em; color: var(--faint); align-items: center; }
+  .route b { color: var(--txt); font-weight: 500; }
+  .route .arrow { color: var(--volt); }
+  #contact { border-top: 1px solid var(--line); text-align: center; }
+  .contact-h { font-size: clamp(2.2rem, 5vw, 4.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+  .contact-h em { font-style: normal; color: var(--volt); text-shadow: 0 0 32px rgba(0,255,157,0.35); }
+  .contact-sub { color: var(--dim); margin-top: 1.4rem; font-size: 0.95rem; }
+  .contact-ctas { display: flex; gap: 1rem; justify-content: center; margin-top: 2.8rem; flex-wrap: wrap; }
+  .eco-links { display: flex; gap: 2.5rem; justify-content: center; margin-top: 2.6rem; flex-wrap: wrap; }
+  .eco-link { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color 0.2s; }
+  .eco-link:hover { color: var(--volt); }
+  footer { border-top: 1px solid var(--line); padding: 1.8rem 2.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
+  .fl { font-family: 'IBM Plex Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; color: var(--faint); }
+  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .d1 { transition-delay: 0.1s; }
+  .d2 { transition-delay: 0.2s; }
+  .d3 { transition-delay: 0.3s; }
+  @media (max-width: 960px) {
+    nav { padding: 1rem 1.3rem; }
+    .nav-links { display: none; }
+    #hero { grid-template-columns: 1fr; padding: 7rem 1.5rem 3.5rem; gap: 3rem; }
+    .wrap { padding: 4.5rem 1.5rem; }
+    .metrics-inner { grid-template-columns: 1fr 1fr; }
+    .metric { border-left: none; border-top: 1px solid var(--line); }
+    .thesis-grid, .founder-grid, .book-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .thesis-left { position: static; }
+    .eco-grid, .creds-grid { grid-template-columns: 1fr; }
+    .principle { grid-template-columns: 1fr; gap: 0.8rem; padding: 1.8rem 1.5rem; }
+    .bf { grid-template-columns: 1fr; gap: 0.4rem; }
+    .t-row { grid-template-columns: 1fr; gap: 0.4rem; }
+    .chips { justify-content: flex-start; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-mark" href="#hero">PHIL<span>_</span>MYINT</a>
+  <ul class="nav-links">
+    <li><a href="#ecosystem">Ecosystem</a></li>
+    <li><a href="#thesis">Thesis</a></li>
+    <li><a href="#book">Books</a></li>
+    <li><a href="#track">Track Record</a></li>
+    <li><a href="#creds">Credentials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-status"><span class="pulse-dot"></span>SYSTEMS NOMINAL · BNE UTC+10</div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div>
+    <div class="hero-eyebrow">Founder · The ZenCloud Ecosystem · Est. 2024</div>
+    <h1 class="hero-h1">Strategy.<br>Delivery.<br><em>Architecture.</em></h1>
+    <p class="hero-sub">Most enterprises run tomorrow's ambitions on yesterday's architecture. I close that gap. <strong>ZenCloud Advisory</strong> sets direction. <strong>StudioSix</strong> ships it. <strong>ZenCloud Velocity</strong> keeps it honest.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-volt" href="#ecosystem">Explore the Ecosystem</a>
+      <a class="btn btn-ghost" href="https://velocityarchitectureframework.com/" target="_blank" rel="noopener noreferrer">Read ZenCloud Velocity</a>
+    </div>
+  </div>
+
+  <div class="term">
+    <div class="term-bar">
+      <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+      <span class="term-title">zencloud — ecosystem · founder@bne</span>
+    </div>
+    <div class="term-body" id="termBody"></div>
+  </div>
+</section>
+
+<!-- METRICS -->
+<section id="metrics">
+  <div class="metrics-inner">
+    <div class="metric reveal">
+      <div class="metric-num"><span data-count="25">0</span><b>+</b></div>
+      <div class="metric-label">Years in enterprise tech</div>
+    </div>
+    <div class="metric reveal d1">
+      <div class="metric-num"><span data-count="3">0</span></div>
+      <div class="metric-label">Ventures · One ecosystem</div>
+    </div>
+    <div class="metric reveal d2">
+      <div class="metric-num"><span data-count="2">0</span></div>
+      <div class="metric-label">Books · coming to Amazon</div>
+    </div>
+    <div class="metric reveal d3">
+      <div class="metric-num"><span data-count="30">0</span><b>+</b></div>
+      <div class="metric-label">Certifications held</div>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section id="ecosystem">
+  <div class="wrap">
+    <span class="sec-tag reveal">01 — The Ecosystem</span>
+    <h2 class="sec-h reveal">Three ventures,<br>one <em>operating model.</em></h2>
+    <div class="eco-grid">
+      <div class="card reveal">
+        <div class="card-glow"></div>
+        <span class="card-tag live">● Live</span>
+        <div class="card-role">Strategy — Client Entry Point</div>
+        <div class="card-title">ZenCloud Advisory</div>
+        <div class="card-body">The enterprise architecture and cloud advisory practice behind the ZenCloud Velocity ecosystem. Architecture advisory, cloud governance, and senior leadership. All clients engage here first.</div>
+        <a class="card-link" href="https://zencloud.com.au/" target="_blank" rel="noopener noreferrer">zencloud.com.au →</a>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-glow"></div>
+        <span class="card-tag live">● Live</span>
+        <div class="card-role">Delivery — AI Engine</div>
+        <div class="card-title">StudioSix</div>
+        <div class="card-body">ZenCloud Advisory's architecture-led AI delivery engine. Approved mandates become governed artefacts, traceable decisions, delivery visibility, and controlled handover — AI-accelerated, architect-governed.</div>
+        <a class="card-link" href="https://studiosix.com.au/" target="_blank" rel="noopener noreferrer">studiosix.com.au →</a>
+      </div>
+      <div class="card reveal d2">
+        <div class="card-glow"></div>
+        <span class="card-tag live">● Public</span>
+        <div class="card-role">Architecture — The Framework</div>
+        <div class="card-title">ZenCloud Velocity</div>
+        <div class="card-body">The public knowledge base for decision-first architecture: formal specification, six viewpoints, diagnostics, templates, research, and practitioner publications. Open method — because a framework you can't inspect is just marketing.</div>
+        <a class="card-link" href="https://velocityarchitectureframework.com/" target="_blank" rel="noopener noreferrer">velocityarchitectureframework.com →</a>
+      </div>
+    </div>
+    <div class="eco-flow reveal d3">
+      <b>Advisory</b> sets direction <span class="arrow">→</span> <b>StudioSix</b> delivers it <span class="arrow">→</span> <b>ZenCloud Velocity</b> governs the method
+    </div>
+  </div>
+</section>
+
+<!-- THESIS -->
+<section id="thesis">
+  <div class="wrap">
+    <div class="thesis-grid">
+      <div class="thesis-left reveal">
+        <span class="sec-tag">02 — The Thesis</span>
+        <h2 class="sec-h">Architecture at the speed of the <em>decision.</em></h2>
+        <p class="thesis-note">AI didn't change what good architecture is. It changed the price of not having it. The enterprises that win the next decade will be the ones whose decisions — and the systems behind them — can move at velocity without losing the audit trail.</p>
+      </div>
+      <div class="principles">
+        <div class="principle reveal">
+          <div class="pr-num">/01</div>
+          <div>
+            <div class="pr-title">Decision-first, not diagram-first</div>
+            <div class="pr-body">The unit of architecture is the decision: who made it, on what evidence, with what trade-offs. ZenCloud Velocity structures the practice around six viewpoints — direction, decision, truth, velocity, rhythm, and practitioner integrity.</div>
+          </div>
+        </div>
+        <div class="principle reveal d1">
+          <div class="pr-num">/02</div>
+          <div>
+            <div class="pr-title">Strategy that doesn't ship is fiction</div>
+            <div class="pr-body">No hundred-page decks that die in a drawer. Every mandate that leaves Advisory enters StudioSix as governed delivery — traceable decisions, controlled artefacts, clean handover. If it can't survive contact with production, it doesn't leave the room.</div>
+          </div>
+        </div>
+        <div class="principle reveal d2">
+          <div class="pr-num">/03</div>
+          <div>
+            <div class="pr-title">AI-accelerated, architect-governed</div>
+            <div class="pr-body">AI is the delivery engine, not the decision-maker. StudioSix pairs AI acceleration with architectural governance, so speed never comes at the cost of accountability. That pairing is the whole point.</div>
+          </div>
+        </div>
+        <div class="principle reveal d3">
+          <div class="pr-num">/04</div>
+          <div>
+            <div class="pr-title">Publish the method, openly</div>
+            <div class="pr-body">The framework, its specification, diagnostics, templates, and the research behind it are public at velocityarchitectureframework.com. Twenty-five years of practice, written down where anyone can test it.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section id="book">
+  <div class="wrap">
+    <div class="book-grid">
+      <div class="reveal">
+        <span class="sec-tag">03 — The Books</span>
+        <h2 class="sec-h">Written. Complete.<br>Coming to <em>Amazon.</em></h2>
+        <p class="book-quote">Two complete works on the discipline — <b>the full argument</b> and <b>the field guide</b>. Publishing soon on Amazon.</p>
+      </div>
+      <div class="book-facts reveal d1">
+        <div class="bf">
+          <div class="bf-k">The Argument</div>
+          <div class="bf-v"><b>Where Architecture Truly Creates Value</b> — the complete case for decision-first architecture, fifty chapters from foreword to close.</div>
+        </div>
+        <div class="bf">
+          <div class="bf-k">The Field Guide</div>
+          <div class="bf-v"><b>Reading the Map — A Beginner's Guide to Enterprise Architecture</b> — the on-ramp for practitioners and leaders entering the discipline.</div>
+        </div>
+        <div class="bf">
+          <div class="bf-k">Alongside them</div>
+          <div class="bf-v"><b>Thought Series</b> long-form essays, <b>Signal</b> practitioner observations, and a research library — all in the ZenCloud Velocity public knowledge base.</div>
+        </div>
+        <div class="bf">
+          <div class="bf-k">Release</div>
+          <div class="bf-v"><b>Publishing soon on Amazon</b> — watch for the titles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK -->
+<section id="track">
+  <div class="wrap">
+    <span class="sec-tag reveal">04 — Track Record</span>
+    <h2 class="sec-h reveal">Built across<br><em>six continents.</em></h2>
+    <div class="track">
+      <div class="t-row reveal">
+        <div class="t-period">2024 → NOW</div>
+        <div>
+          <div class="t-title">Founder &amp; Principal Architect — The ZenCloud Ecosystem</div>
+          <div class="t-org">ZENCLOUD ADVISORY · STUDIOSIX · ZENCLOUD VELOCITY · BRISBANE · ABN REGISTERED</div>
+        </div>
+        <div class="chips">
+          <span class="chip">Advisory</span>
+          <span class="chip">AI Delivery</span>
+          <span class="chip">Framework</span>
+        </div>
+      </div>
+      <div class="t-row reveal d1">
+        <div class="t-period">2010 → 2024</div>
+        <div>
+          <div class="t-title">Senior Consulting &amp; Architecture — Global</div>
+          <div class="t-org">AUSTRALIA · EUROPE · AMERICAS · UAE</div>
+        </div>
+        <div class="chips">
+          <span class="chip">Enterprise</span>
+          <span class="chip">Cloud</span>
+          <span class="chip">Global</span>
+        </div>
+      </div>
+      <div class="t-row reveal d2">
+        <div class="t-period">1999 → 2004</div>
+        <div>
+          <div class="t-title">Consulting — London Trading Floors</div>
+          <div class="t-org">LONDON · TOP-TIER FIRMS · UK &amp; EUROPEAN OPERATIONS</div>
+        </div>
+        <div class="chips">
+          <span class="chip">UK Market</span>
+          <span class="chip">Enterprise</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="creds">
+  <div class="wrap">
+    <span class="sec-tag reveal">05 — Credentials</span>
+    <h2 class="sec-h reveal">Certified across<br>the <em>full stack.</em></h2>
+    <div class="creds-grid">
+      <div class="cred reveal">
+        <div class="cred-cat">Cloud &amp; Architecture</div>
+        <ul class="cred-list">
+          <li><b>Microsoft Certified: Azure Solutions Architect Expert</b><span class="yr">2023–2026</span></li>
+          <li>AZ-305 — Designing Azure Infrastructure Solutions<span class="yr">2023</span></li>
+          <li>AWS Knowledge: Architecting · Cloud Practitioner Essentials<span class="yr">2024</span></li>
+          <li>AWS Security Fundamentals<span class="yr">2025</span></li>
+          <li>Databricks Platform Architect — Azure &amp; AWS</li>
+        </ul>
+      </div>
+      <div class="cred reveal d1">
+        <div class="cred-cat">Security &amp; Governance</div>
+        <ul class="cred-list">
+          <li><b>ISO/IEC 27001 Information Security Associate</b></li>
+          <li>Fortinet FCA / FCF Cybersecurity<span class="yr">2024–2026</span></li>
+          <li>Palo Alto PSE — Foundation · Strata · Software FW<span class="yr">2024</span></li>
+          <li>Microsoft Defender &amp; Sentinel Ninja<span class="yr">2023</span></li>
+          <li>API Security Architect — API Academy<span class="yr">2022</span></li>
+        </ul>
+      </div>
+      <div class="cred reveal d2">
+        <div class="cred-cat">Enterprise &amp; Delivery</div>
+        <ul class="cred-list">
+          <li><b>TOGAF® Certified</b> — v9.2 &amp; 10 aligned</li>
+          <li><b>CBA® — Certified Business Architect</b><span class="yr">2025–2028</span></li>
+          <li>Lean Six Sigma Green Belt · Scrum Master Certified</li>
+          <li>ITIL Foundation · PRINCE2® Foundation</li>
+          <li>Commvault · Veeam Professional · Orbus Infinity<span class="yr">2024–2025</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="creds-foot reveal d3">
+      <b>30+ active certifications</b> spanning cloud, security, data, enterprise architecture and delivery · DAMA Australia Member
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder">
+  <div class="wrap">
+    <div class="founder-grid">
+      <div class="reveal">
+        <span class="sec-tag">06 — The Founder</span>
+        <h2 class="sec-h">Phil<br><em>Myint.</em></h2>
+        <div class="route">
+          <b>Wellington</b> <span class="arrow">→</span> <b>London</b> <span class="arrow">→</span> <b>Brisbane</b> <span class="arrow">→</span> <b>The World</b>
+        </div>
+      </div>
+      <div class="founder-body reveal d1">
+        <p>I learned systems engineering in New Zealand by building systems. I sharpened it on London's trading floors — <strong>rooms where slow architecture costs real money by lunchtime.</strong> Now I operate from Australia to the world.</p>
+        <p>Twenty-five years. Fifty-plus countries. Six continents. Europe, the Americas, the Middle East, Australia — trading floors to national-scale platforms. <strong>I've seen every way architecture fails, and most of the ways it wins.</strong></p>
+        <p>I walk into a boardroom, read it, and deliver. The ZenCloud ecosystem is that skill, productised: an advisory practice, an AI delivery engine, and a published framework. <strong>Founder-led. Built for the long term.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <h2 class="contact-h reveal">I don't sell strategy.<br>I <em>ship it.</em></h2>
+    <p class="contact-sub reveal d1">Brisbane to the World · Europe · Americas · UAE</p>
+    <div class="contact-ctas reveal d2">
+      <a class="btn btn-volt" href="mailto:phil@zencloud.com.au">phil@zencloud.com.au</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/pmyint" target="_blank" rel="noopener noreferrer">LinkedIn — /in/pmyint</a>
+    </div>
+    <div class="eco-links reveal d3">
+      <a class="eco-link" href="https://zencloud.com.au/" target="_blank" rel="noopener noreferrer">ZenCloud</a>
+      <a class="eco-link" href="https://studiosix.com.au/" target="_blank" rel="noopener noreferrer">StudioSix</a>
+      <a class="eco-link" href="https://velocityarchitectureframework.com/" target="_blank" rel="noopener noreferrer">ZenCloud Velocity</a>
+      <a class="eco-link" href="https://www.linkedin.com/in/pmyint" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">© 2026 ZenCloud Global Consultants · Phil Myint · Brisbane, Australia · ABN Registered</div>
+  <div class="fl">Strategy. Delivery. Architecture.</div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const cio = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      const el = e.target, target = +el.dataset.count, dur = 1200, t0 = performance.now();
+      (function tick(t) {
+        const k = Math.min((t - t0) / dur, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(tick);
+      })(t0);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+  const lines = [
+    { html: '<span class="p">founder@zencloud</span>:~$ zencloud --ecosystem', t: 0 },
+    { html: '<span class="c">▸ strategy</span>   ZenCloud Advisory <span class="ok">[live · client entry point]</span>', t: 600 },
+    { html: '<span class="c">▸ delivery</span>   StudioSix <span class="ok">[live · AI delivery engine]</span>', t: 1100 },
+    { html: '<span class="c">▸ framework</span>  ZenCloud Velocity <span class="ok">[public knowledge base]</span>', t: 1600 },
+    { html: '<span class="c">▸ books</span>      2 complete <span class="a">[publishing soon · Amazon]</span>', t: 2100 },
+    { html: '<span class="c">▸ base</span>       Brisbane, Australia · UTC+10', t: 2600 },
+    { html: '<span class="ok">✓ all systems building</span> <span class="caret"></span>', t: 3200 }
+  ];
+  const tb = document.getElementById('termBody');
+  lines.forEach(l => setTimeout(() => {
+    tb.querySelectorAll('.caret').forEach(c => c.remove());
+    const s = document.createElement('span');
+    s.className = 'ln'; s.innerHTML = l.html;
+    tb.appendChild(s);
+  }, 900 + l.t));
+</script>
+</body>
+</html>
