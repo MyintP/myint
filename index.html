@@ -19,7 +19,7 @@
 <style>
   :root {
     --void: #050608; --panel: #0a0d12; --line: rgba(140,170,200,0.10);
-    --txt: #e8edf2; --dim: #8a96a3; --faint: #4a545f;
+    --txt: #e8edf2; --dim: #9aa6b3; --faint: #6b7884;
     --volt: #00ff9d; --volt-dim: rgba(0,255,157,0.12);
     --cyan: #5ed1ff; --amber: #ffb454;
   }
@@ -49,7 +49,7 @@
   .nav-status { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--volt); border: 1px solid rgba(0,255,157,0.25); background: var(--volt-dim); padding: 0.35rem 0.8rem; border-radius: 2px; }
   .pulse-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--volt); animation: pulse 2s ease-in-out infinite; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
-  #hero { min-height: 100vh; display: grid; grid-template-columns: 1.25fr 1fr; gap: 4rem; align-items: center; padding: 8rem 4rem 5rem; max-width: 1440px; margin: 0 auto; position: relative; z-index: 1; }
+  #hero { min-height: 88vh; display: grid; grid-template-columns: 1.25fr 1fr; gap: 4rem; align-items: center; padding: 7rem 4rem 3rem; max-width: 1440px; margin: 0 auto; position: relative; z-index: 1; }
   .hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--volt); margin-bottom: 1.6rem; opacity: 0; animation: rise 0.7s 0.15s forwards; }
   .hero-h1 { font-size: clamp(2.6rem, 5.2vw, 4.6rem); font-weight: 700; line-height: 1.04; letter-spacing: -0.025em; opacity: 0; animation: rise 0.8s 0.3s forwards; }
   .hero-h1 em { font-style: normal; color: var(--volt); text-shadow: 0 0 32px rgba(0,255,157,0.35); }
@@ -83,7 +83,7 @@
   .metric-num b { color: var(--volt); font-weight: 600; }
   .metric-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); margin-top: 0.55rem; }
   section { position: relative; z-index: 1; }
-  .wrap { max-width: 1440px; margin: 0 auto; padding: 7rem 4rem; }
+  .wrap { max-width: 1440px; margin: 0 auto; padding: 5rem 4rem; }
   .sec-tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.63rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--volt); display: block; margin-bottom: 1.1rem; }
   .sec-h { font-size: clamp(2rem, 3.8vw, 3.4rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
   .sec-h em { font-style: normal; color: var(--volt); }
@@ -564,7 +564,7 @@
 <script>
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.04, rootMargin: '0px 0px 12% 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
   const cio = new IntersectionObserver((entries) => {
