@@ -45,6 +45,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .nav-cta:hover{background:var(--gold-light)}
 @media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
 
+/* brand banner cover */
+.cover{position:relative;background:var(--ink-2);overflow:hidden;border-bottom:1px solid rgba(212,179,106,0.18)}
+.cover::before{content:'';position:absolute;inset:0;background:url('/assets/hero-building.jpg') right center/cover no-repeat;opacity:0.5;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 45%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 45%,#000 100%)}
+.cover::after{content:'';position:absolute;left:0;top:0;bottom:0;width:36%;background:url('/assets/hero-lines.png') left center/cover no-repeat;opacity:0.14;pointer-events:none}
+.cover-in{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:2.6rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.5rem}
+.cover-logo{width:auto;height:132px;max-width:90%;object-fit:contain}
+.cover-tag{font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.22em;color:var(--gold-light);margin-top:0.3rem}
+.cover-place{font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.2em;color:rgba(235,228,210,0.55)}
+@media(max-width:560px){.cover-logo{height:104px}.cover-tag{font-size:0.68rem;letter-spacing:0.16em}}
+
 /* hero */
 header{background:var(--ink);color:var(--paper);border-bottom:3px solid var(--gold);position:relative;overflow:hidden}
 header .oa-wm{position:absolute;right:-5%;top:50%;transform:translateY(-50%);width:34%;max-width:420px;opacity:0.06;pointer-events:none}
@@ -117,6 +127,8 @@ section{scroll-margin-top:70px}
 /* footer */
 footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
 .foot{max-width:1080px;margin:0 auto;padding:2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:0.7rem}
+.foot-brand img{border-radius:6px}
 .foot .tag{font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.12em;color:var(--gold-light)}
 .foot .copy{font-size:0.8rem;color:rgba(250,247,239,0.5)}
 .foot a{color:var(--gold-light)}
@@ -135,6 +147,14 @@ footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
     </ul>
   </div>
 </nav>
+
+<section class="cover" aria-label="Ordo Animi">
+  <div class="cover-in">
+    <img class="cover-logo" src="/assets/Primary_Logo.png" alt="Ordo Animi — Enterprise Architecture, AI Governance, Technology Strategy">
+    <p class="cover-tag">Clarity. Governance. Execution.</p>
+    <p class="cover-place">Brisbane &middot; Global</p>
+  </div>
+</section>
 
 <header>
   <img class="oa-wm" src="/oa-mark.png" alt="" aria-hidden="true">
@@ -254,7 +274,7 @@ footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
 
 <footer>
   <div class="foot">
-    <span class="tag">Clarity. Governance. Execution.</span>
+    <span class="foot-brand"><img src="/favicon.svg" alt="" width="30" height="30"><span class="tag">Clarity. Governance. Execution.</span></span>
     <span class="copy">&copy; 2026 Phil Myint &middot; Ordo Animi &middot; Brisbane &amp; Global &middot; <a href="https://www.ordoanimi.com/">ordoanimi.com</a></span>
   </div>
 </footer>
