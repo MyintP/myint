@@ -3,634 +3,261 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phil Myint — Founder, ZenCloud Ecosystem</title>
-<meta name="description" content="Phil Myint — founder of the ZenCloud ecosystem: ZenCloud Advisory, StudioSix AI delivery, and the ZenCloud Velocity Architecture Framework. Strategy. Delivery. Architecture.">
-<link rel="canonical" href="https://myint.zencloud.com.au/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://myint.zencloud.com.au/">
-<meta property="og:title" content="Phil Myint — Founder, ZenCloud Ecosystem">
-<meta property="og:description" content="Founder of the ZenCloud ecosystem: ZenCloud Advisory, StudioSix AI delivery, and the ZenCloud Velocity Architecture Framework.">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0f172a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230f172a'/%3E%3Ctext x='32' y='44' font-family='monospace' font-weight='700' font-size='30' fill='%23e8630a' text-anchor='middle'%3EZ/%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Phil Myint",
-  "jobTitle": "Founder & Principal Architect",
-  "url": "https://myint.zencloud.com.au/",
-  "email": "phil@zencloud.com.au",
-  "address": { "@type": "PostalAddress", "addressLocality": "Brisbane", "addressRegion": "QLD", "addressCountry": "AU" },
-  "sameAs": [
-    "https://www.linkedin.com/in/pmyint",
-    "https://zencloud.com.au/",
-    "https://studiosix.com.au/",
-    "https://velocityarchitectureframework.com/"
-  ],
-  "worksFor": { "@type": "Organization", "name": "ZenCloud Advisory", "url": "https://zencloud.com.au/", "foundingDate": "2015" },
-  "knowsAbout": ["Enterprise Architecture", "Cloud Advisory", "AI Strategy", "Architecture Governance", "Cybersecurity Architecture", "Velocity Architecture Framework"],
-  "description": "Founder of the ZenCloud ecosystem: ZenCloud Advisory (strategy), StudioSix (AI-accelerated delivery), and ZenCloud Velocity (public decision-first architecture framework). 30+ years across six continents: scaled a global security platform from 4M to 25M seats, US$30M+ annual savings through data-centre consolidation, US$35M+ annualised program savings, design authority across government and enterprise portfolios. 62 certifications including Azure Solutions Architect Expert, TOGAF, and CBA. Author of 'Where Architecture Truly Creates Value' and 'Reading the Map — A Beginner's Guide to Enterprise Architecture' (Amazon, Q4 2026)."
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Phil Myint &mdash; Enterprise &amp; Solution Architect | Contract EA/SA, Brisbane &amp; Remote</title>
+<meta name="description" content="Phil Myint — enterprise and solution architect with three decades delivering governed, executable outcomes across government, security, cloud and global technology. Available for contract EA and SA engagements.">
+<link rel="canonical" href="https://myint.ordoanimi.com/">
+<meta property="og:title" content="Phil Myint — Enterprise &amp; Solution Architect">
+<meta property="og:description" content="Three decades building architecture that ships. Available for contract EA and SA engagements — Brisbane and remote.">
+<meta property="og:url" content="https://myint.ordoanimi.com/">
+<meta property="og:image" content="https://myint.ordoanimi.com/og-card.png">
+<meta property="og:type" content="profile">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
-  :root {
-    --void: #0f172a; --panel: #1e293b; --line: rgba(226,232,240,0.13);
-    --txt: #f8fafc; --dim: #b2bfce; --faint: #8093a8;
-    --volt: #e8630a; --volt-dim: rgba(232,99,10,0.14);
-    --cyan: #f0b429; --amber: #f0b429;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--void); color: var(--txt); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
-  ::selection { background: var(--volt); color: var(--void); }
-  body::before {
-    content: ''; position: fixed; inset: 0;
-    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 72px 72px;
-    mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 0%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 0%, transparent 75%);
-    pointer-events: none; z-index: 0;
-  }
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 1.1rem 2.5rem; background: rgba(5,6,8,0.82);
-    backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
-  }
-  .nav-mark { font-family: 'DM Mono', monospace; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.12em; color: var(--txt); text-decoration: none; }
-  .nav-mark span { color: var(--volt); }
-  .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
-  .nav-links a { font-family: 'DM Mono', monospace; font-size: 0.64rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--dim); text-decoration: none; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--volt); }
-  .nav-status { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--volt); border: 1px solid rgba(232,99,10,0.25); background: var(--volt-dim); padding: 0.35rem 0.8rem; border-radius: 2px; }
-  .pulse-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--volt); animation: pulse 2s ease-in-out infinite; }
-  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
-  #hero { min-height: 88vh; display: grid; grid-template-columns: 1.25fr 1fr; gap: 4rem; align-items: center; padding: 7rem 4rem 3rem; max-width: 1440px; margin: 0 auto; position: relative; z-index: 1; }
-  .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--volt); margin-bottom: 1.6rem; opacity: 0; animation: rise 0.7s 0.15s forwards; }
-  .hero-h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 5.2vw, 4.6rem); font-weight: 700; line-height: 1.04; letter-spacing: -0.025em; opacity: 0; animation: rise 0.8s 0.3s forwards; }
-  .hero-h1 em { font-style: normal; color: var(--volt); text-shadow: 0 0 32px rgba(232,99,10,0.35); }
-  .hero-sub { font-size: clamp(0.95rem, 1.4vw, 1.1rem); line-height: 1.75; color: var(--dim); max-width: 560px; margin-top: 1.8rem; opacity: 0; animation: rise 0.8s 0.5s forwards; }
-  .hero-sub strong { color: var(--txt); font-weight: 600; }
-  .hero-ctas { display: flex; gap: 1rem; margin-top: 2.6rem; flex-wrap: wrap; opacity: 0; animation: rise 0.8s 0.65s forwards; }
-  .btn { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; padding: 0.95rem 1.8rem; border-radius: 2px; transition: all 0.2s; }
-  .btn-volt { background: var(--volt); color: var(--void); font-weight: 600; box-shadow: 0 0 28px rgba(232,99,10,0.25); }
-  .btn-volt:hover { box-shadow: 0 0 44px rgba(232,99,10,0.5); transform: translateY(-2px); }
-  .btn-ghost { color: var(--txt); border: 1px solid rgba(226,232,240,0.25); }
-  .btn-ghost:hover { border-color: var(--volt); color: var(--volt); }
-  .term { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.5); opacity: 0; animation: rise 0.9s 0.8s forwards; }
-  .term-bar { display: flex; align-items: center; gap: 0.45rem; padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); background: rgba(226,232,240,0.03); }
-  .term-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--faint); }
-  .term-dot:nth-child(1) { background: #ff5f57; }
-  .term-dot:nth-child(2) { background: var(--amber); }
-  .term-dot:nth-child(3) { background: var(--volt); }
-  .term-title { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--faint); margin-left: 0.6rem; letter-spacing: 0.08em; }
-  .term-body { font-family: 'DM Mono', monospace; font-size: 0.72rem; line-height: 2.05; padding: 1.3rem 1.4rem; color: var(--dim); min-height: 285px; }
-  .term-body .ln { display: block; white-space: pre-wrap; }
-  .term-body .p { color: var(--volt); }
-  .term-body .c { color: var(--cyan); }
-  .term-body .a { color: var(--amber); }
-  .term-body .ok { color: var(--volt); }
-  .caret { display: inline-block; width: 7px; height: 13px; background: var(--volt); vertical-align: -2px; animation: pulse 1s steps(1) infinite; }
-  #metrics { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(226,232,240,0.02); position: relative; z-index: 1; }
-  .metrics-inner { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
-  .metric { padding: 2.6rem 2rem; border-left: 1px solid var(--line); text-align: center; }
-  .metric:first-child { border-left: none; }
-  .metric-num { font-family: 'DM Mono', monospace; font-size: clamp(2rem, 3.4vw, 3rem); font-weight: 600; color: var(--txt); }
-  .metric-num b { color: var(--volt); font-weight: 600; }
-  .metric-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); margin-top: 0.55rem; }
-  section { position: relative; z-index: 1; }
-  .wrap { max-width: 1440px; margin: 0 auto; padding: 5rem 4rem; }
-  .sec-tag { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--volt); display: block; margin-bottom: 1.1rem; }
-  .sec-h { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.8vw, 3.4rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; }
-  .sec-h em { font-style: normal; color: var(--volt); }
-  #ecosystem { background: rgba(226,232,240,0.02); border-bottom: 1px solid var(--line); }
-  .eco-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; }
-  .card { background: var(--panel); border: 1px solid var(--line); padding: 2.6rem 2.4rem; position: relative; overflow: hidden; transition: border-color 0.25s; display: flex; flex-direction: column; }
-  .card:hover { border-color: rgba(232,99,10,0.35); }
-  .card:hover .card-glow { opacity: 1; }
-  .card-glow { position: absolute; top: -60px; right: -60px; width: 180px; height: 180px; background: radial-gradient(circle, rgba(232,99,10,0.12) 0%, transparent 70%); opacity: 0; transition: opacity 0.4s; pointer-events: none; }
-  .card-tag { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); display: inline-block; border: 1px solid var(--line); padding: 0.25rem 0.6rem; border-radius: 2px; margin-bottom: 1.5rem; width: fit-content; }
-  .card-tag.live { color: var(--volt); border-color: rgba(232,99,10,0.3); background: var(--volt-dim); }
-  .card-role { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cyan); margin-bottom: 0.6rem; }
-  .card-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.8rem; }
-  .card-body { font-size: 0.84rem; line-height: 1.8; color: var(--dim); flex: 1; }
-  .card-link { font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--volt); text-decoration: none; display: inline-block; margin-top: 1.6rem; }
-  .card-link:hover { text-decoration: underline; }
-  .eco-flow { margin-top: 2px; background: var(--panel); border: 1px solid var(--line); padding: 1.4rem 2.4rem; font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); text-align: center; }
-  .eco-flow b { color: var(--txt); font-weight: 500; }
-  .eco-flow .arrow { color: var(--volt); margin: 0 0.8rem; }
-  .thesis-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 5rem; align-items: start; }
-  .thesis-left { position: sticky; top: 7rem; }
-  .thesis-note { font-size: 0.95rem; line-height: 1.85; color: var(--dim); margin-top: 1.8rem; border-left: 2px solid var(--volt); padding-left: 1.4rem; }
-  .principles { display: flex; flex-direction: column; gap: 2px; }
-  .principle { display: grid; grid-template-columns: 70px 1fr; gap: 1.8rem; background: var(--panel); border: 1px solid var(--line); padding: 2.2rem 2.4rem; transition: border-color 0.25s, transform 0.25s; }
-  .principle:hover { border-color: rgba(232,99,10,0.35); transform: translateX(6px); }
-  .pr-num { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--volt); padding-top: 0.3rem; }
-  .pr-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.6rem; }
-  .pr-body { font-size: 0.84rem; line-height: 1.8; color: var(--dim); }
-  #book { background: rgba(226,232,240,0.02); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .book-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: center; }
-  .book-quote { font-size: 1.15rem; line-height: 1.85; color: var(--dim); border-left: 2px solid var(--volt); padding-left: 1.6rem; margin-top: 1.8rem; }
-  .book-quote b { color: var(--txt); font-weight: 600; }
-  .book-facts { display: flex; flex-direction: column; gap: 2px; }
-  .bf { display: grid; grid-template-columns: 140px 1fr; gap: 1.5rem; background: var(--panel); border: 1px solid var(--line); padding: 1.4rem 1.8rem; font-size: 0.84rem; }
-  .bf-k { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--cyan); padding-top: 0.2rem; }
-  .bf-v { color: var(--dim); line-height: 1.7; }
-  .bf-v b { color: var(--txt); font-weight: 600; }
-  .track { margin-top: 3.5rem; display: flex; flex-direction: column; }
-  .t-row { display: grid; grid-template-columns: 150px 1fr auto; gap: 2.5rem; align-items: baseline; padding: 1.7rem 0; border-bottom: 1px solid var(--line); transition: padding-left 0.2s; }
-  .t-row:hover { padding-left: 0.7rem; }
-  .t-period { font-family: 'DM Mono', monospace; font-size: 0.66rem; color: var(--volt); letter-spacing: 0.08em; }
-  .t-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
-  .t-org { font-family: 'DM Mono', monospace; font-size: 0.66rem; color: var(--faint); letter-spacing: 0.05em; }
-  .chips { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
-  .chip { font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); border: 1px solid var(--line); padding: 0.22rem 0.55rem; border-radius: 2px; }
-  #proof { border-top: 1px solid var(--line); }
-  .proof-lede { font-size: 0.98rem; line-height: 1.85; color: var(--dim); max-width: 860px; margin-top: 1.8rem; }
-  .proof-lede strong { color: var(--txt); font-weight: 600; }
-  .prows { display: flex; flex-direction: column; gap: 2px; margin-top: 3rem; }
-  .prow { display: grid; grid-template-columns: 1.2fr 0.7fr 1.3fr 1.3fr; gap: 1.5rem; align-items: baseline; background: var(--panel); border: 1px solid var(--line); padding: 1.4rem 1.8rem; transition: border-color 0.25s; }
-  .prow:hover { border-color: rgba(232,99,10,0.35); }
-  .prow-org { font-size: 0.95rem; font-weight: 600; color: var(--txt); }
-  .prow-period { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--volt); letter-spacing: 0.08em; }
-  .prow-them { font-family: 'DM Mono', monospace; font-size: 0.62rem; line-height: 1.7; color: var(--faint); letter-spacing: 0.04em; }
-  .prow-me { font-family: 'DM Mono', monospace; font-size: 0.64rem; color: var(--cyan); letter-spacing: 0.06em; }
-  .prow-head { background: transparent; border: none; padding: 0.4rem 1.8rem; }
-  .prow-head div { font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); }
-  .pstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin-top: 2px; }
-  .pstat { background: var(--panel); border: 1px solid var(--line); padding: 1.8rem 1.6rem; transition: border-color 0.25s; }
-  .pstat:hover { border-color: rgba(232,99,10,0.35); }
-  .pstat-num { font-family: 'DM Mono', monospace; font-size: 1.5rem; font-weight: 600; color: var(--volt); }
-  .pstat-label { font-size: 0.74rem; line-height: 1.65; color: var(--dim); margin-top: 0.6rem; }
-  .proof-quote { margin-top: 3rem; border-left: 2px solid var(--volt); padding-left: 1.8rem; }
-  .pq-text { font-size: 1.05rem; line-height: 1.8; color: var(--txt); }
-  .pq-attr { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; color: var(--faint); margin-top: 1rem; line-height: 1.8; }
-  @media (max-width: 960px) { .prow { grid-template-columns: 1fr; gap: 0.5rem; } .prow-head { display: none; } .pstats { grid-template-columns: 1fr 1fr; } }
-  #creds { background: rgba(226,232,240,0.02); border-top: 1px solid var(--line); }
-  .creds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; }
-  .cred { background: var(--panel); border: 1px solid var(--line); padding: 2.2rem 2rem; transition: border-color 0.25s; }
-  .cred:hover { border-color: rgba(232,99,10,0.35); }
-  .cred-cat { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cyan); margin-bottom: 1.2rem; }
-  .cred-list { list-style: none; }
-  .cred-list li { font-size: 0.8rem; line-height: 1.65; color: var(--dim); padding: 0.45rem 0; border-bottom: 1px solid var(--line); }
-  .cred-list li:last-child { border-bottom: none; }
-  .cred-list b { color: var(--txt); font-weight: 600; }
-  .cred-list .yr { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--faint); margin-left: 0.4rem; }
-  .creds-foot { margin-top: 2px; background: var(--panel); border: 1px solid var(--line); padding: 1.3rem 2rem; font-family: 'DM Mono', monospace; font-size: 0.64rem; letter-spacing: 0.1em; color: var(--faint); text-align: center; }
-  .creds-foot b { color: var(--volt); font-weight: 500; }
-  #founder { border-top: 1px solid var(--line); }
-  .founder-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start; }
-  .founder-body { font-size: 0.95rem; line-height: 1.9; color: var(--dim); }
-  .founder-body p { margin-bottom: 1.2rem; }
-  .founder-body strong { color: var(--txt); font-weight: 600; }
-  .route { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 2rem; font-family: 'DM Mono', monospace; font-size: 0.64rem; letter-spacing: 0.08em; color: var(--faint); align-items: center; }
-  .route b { color: var(--txt); font-weight: 500; }
-  .route .arrow { color: var(--volt); }
-  #contact { border-top: 1px solid var(--line); text-align: center; }
-  .contact-h { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 4.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
-  .contact-h em { font-style: normal; color: var(--volt); text-shadow: 0 0 32px rgba(232,99,10,0.35); }
-  .contact-sub { color: var(--dim); margin-top: 1.4rem; font-size: 0.95rem; }
-  .contact-ctas { display: flex; gap: 1rem; justify-content: center; margin-top: 2.8rem; flex-wrap: wrap; }
-  .eco-links { display: flex; gap: 2.5rem; justify-content: center; margin-top: 2.6rem; flex-wrap: wrap; }
-  .eco-link { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color 0.2s; }
-  .eco-link:hover { color: var(--volt); }
-  footer { border-top: 1px solid var(--line); padding: 1.8rem 2.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
-  .fl { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; color: var(--faint); }
-  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  .d1 { transition-delay: 0.1s; }
-  .d2 { transition-delay: 0.2s; }
-  .d3 { transition-delay: 0.3s; }
-  @media (max-width: 960px) {
-    nav { padding: 1rem 1.3rem; }
-    .nav-links { display: none; }
-    #hero { grid-template-columns: 1fr; padding: 7rem 1.5rem 3.5rem; gap: 3rem; }
-    .wrap { padding: 4.5rem 1.5rem; }
-    .metrics-inner { grid-template-columns: 1fr 1fr; }
-    .metric { border-left: none; border-top: 1px solid var(--line); }
-    .thesis-grid, .founder-grid, .book-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .thesis-left { position: static; }
-    .eco-grid, .creds-grid { grid-template-columns: 1fr; }
-    .principle { grid-template-columns: 1fr; gap: 0.8rem; padding: 1.8rem 1.5rem; }
-    .bf { grid-template-columns: 1fr; gap: 0.4rem; }
-    .t-row { grid-template-columns: 1fr; gap: 0.4rem; }
-    .chips { justify-content: flex-start; }
-    footer { flex-direction: column; text-align: center; }
-  }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+  --ink:#0b0e11; --ink-2:#07090b;
+  --paper:#faf7ef; --page:#f2ede0; --surface2:#ebe4d2;
+  --border:#ded7c4; --border2:#c9bfa6;
+  --body:#3d4536; --muted:#5a6354; --muted2:#6e7460;
+  --gold:#b8924e; --gold-deep:#96753a; --gold-light:#d4b36a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--page);color:var(--body);font-family:'DM Sans',system-ui,sans-serif;font-size:16px;line-height:1.65}
+a{color:var(--gold-deep);text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.serif{font-family:'Playfair Display',Georgia,serif}
+.mono{font-family:'DM Mono',monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(11,14,17,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,247,239,0.12)}
+.nav-in{max-width:1080px;margin:0 auto;padding:0 1.5rem;height:56px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.nav-brand{display:flex;align-items:center;gap:0.6rem;color:var(--paper)}
+.nav-brand img{width:26px;height:26px;border-radius:5px}
+.nav-brand span{font-family:'Playfair Display',serif;font-size:1.05rem;letter-spacing:0.03em}
+.nav-links{display:flex;gap:1.4rem;list-style:none;align-items:center}
+.nav-links a{font-size:0.84rem;color:var(--surface2)}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold);color:var(--ink)!important;padding:0.5rem 1rem;border-radius:5px;font-weight:600;font-size:0.82rem}
+.nav-cta:hover{background:var(--gold-light)}
+@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+
+/* hero */
+header{background:var(--ink);color:var(--paper);border-bottom:3px solid var(--gold);position:relative;overflow:hidden}
+header .oa-wm{position:absolute;right:-5%;top:50%;transform:translateY(-50%);width:34%;max-width:420px;opacity:0.06;pointer-events:none}
+.hero{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:5.5rem 1.5rem 4.5rem}
+.avail{display:inline-flex;align-items:center;gap:0.5rem;font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.06em;color:var(--gold-light);border:1px solid rgba(212,179,106,0.4);border-radius:999px;padding:0.4rem 0.9rem;margin-bottom:1.6rem}
+.avail .dot{width:7px;height:7px;border-radius:50%;background:#5fbf7a;box-shadow:0 0 0 3px rgba(95,191,122,0.25)}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.6rem,6.5vw,4.8rem);font-weight:600;line-height:1.02;letter-spacing:0.005em;color:var(--paper);margin-bottom:1.4rem;max-width:14ch}
+.hero-lead{max-width:660px;font-size:1.18rem;line-height:1.7;color:var(--surface2)}
+.hero-lead strong{color:var(--paper);font-weight:600}
+.hero-role{font-family:'DM Mono',monospace;font-size:0.82rem;letter-spacing:0.08em;color:var(--gold-light);margin-top:1.4rem}
+.ctas{display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:2.2rem}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 1.5rem;border-radius:7px;font-weight:600;font-size:0.95rem;transition:all .18s}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:var(--gold-light)}
+.btn.ghost{border:1px solid rgba(250,247,239,0.35);color:var(--paper)}
+.btn.ghost:hover{border-color:var(--gold-light);color:var(--gold-light)}
+
+/* stat band */
+.stats{background:var(--ink-2);border-bottom:1px solid rgba(250,247,239,0.08)}
+.stats-in{max-width:1080px;margin:0 auto;padding:2.2rem 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem}
+.stat b{display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:600;color:var(--gold-light);font-variant-numeric:tabular-nums;line-height:1}
+.stat span{display:block;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;color:rgba(235,228,210,0.7);margin-top:0.5rem}
+
+/* sections */
+section{scroll-margin-top:70px}
+.sec{padding:4.5rem 0}
+.sec.alt{background:var(--page)}
+.eyebrow{font-family:'DM Mono',monospace;font-size:0.75rem;letter-spacing:0.16em;color:var(--gold-deep);margin-bottom:0.9rem}
+.sec h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:600;line-height:1.12;color:var(--ink);margin-bottom:1.1rem;max-width:20ch}
+.sec .intro{max-width:680px;font-size:1.08rem;line-height:1.72}
+.pledge{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,2.6vw,1.7rem);font-style:italic;font-weight:500;color:var(--ink);line-height:1.4;max-width:720px;border-left:3px solid var(--gold);padding-left:1.4rem;margin-top:2.4rem}
+
+/* what I do */
+.do-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem;margin-top:2.4rem}
+.do{background:var(--paper);border:1px solid var(--border);border-radius:8px;padding:1.6rem 1.5rem}
+.do .n{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--gold-deep);letter-spacing:0.1em}
+.do h3{font-family:'Playfair Display',serif;font-size:1.12rem;font-weight:600;color:var(--ink);margin:0.5rem 0 0.5rem;line-height:1.25}
+.do p{font-size:0.94rem;color:var(--muted)}
+
+/* delivery track record */
+.track{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;margin-top:2.4rem}
+.tcard{background:var(--paper);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:1.7rem 1.6rem;display:flex;flex-direction:column;gap:0.7rem}
+.tcard .sector{font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;color:var(--gold-deep)}
+.tcard h3{font-family:'Playfair Display',serif;font-size:1.22rem;font-weight:600;color:var(--ink);line-height:1.2}
+.tcard p{font-size:0.95rem;color:var(--muted);line-height:1.6}
+.tcard .metric{margin-top:auto;font-family:'DM Mono',monospace;font-size:0.8rem;color:var(--ink);background:var(--surface2);border-radius:5px;padding:0.6rem 0.8rem;letter-spacing:0.02em}
+
+/* experience */
+.exp-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:3rem;margin-top:2.2rem}
+.exp-list{list-style:none}
+.exp-list li{padding:1.1rem 0;border-top:1px solid var(--border)}
+.exp-list li:first-child{border-top:none}
+.exp-list .role{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:600;color:var(--ink)}
+.exp-list .org{display:block;font-size:0.9rem;color:var(--muted);margin-top:0.2rem}
+.exp-side h3{font-family:'DM Mono',monospace;font-size:0.75rem;letter-spacing:0.12em;color:var(--gold-deep);margin-bottom:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:0.5rem}
+.chip{font-family:'DM Mono',monospace;font-size:0.74rem;color:var(--body);background:var(--paper);border:1px solid var(--border);border-radius:5px;padding:0.4rem 0.7rem}
+.sectors{margin-top:1.8rem;font-size:0.95rem;color:var(--muted);line-height:1.8}
+.sectors b{color:var(--ink);font-weight:600}
+@media(max-width:720px){.exp-grid{grid-template-columns:1fr;gap:2rem}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper)}
+.contact-in{max-width:1080px;margin:0 auto;padding:4.5rem 1.5rem;text-align:center}
+.contact .eyebrow{color:var(--gold-light)}
+.contact h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:600;color:var(--paper);margin-bottom:0.9rem}
+.contact p{max-width:560px;margin:0 auto 2rem;color:var(--surface2);font-size:1.08rem}
+.contact .ctas{justify-content:center}
+
+/* footer */
+footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
+.foot{max-width:1080px;margin:0 auto;padding:2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.foot .tag{font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.12em;color:var(--gold-light)}
+.foot .copy{font-size:0.8rem;color:rgba(250,247,239,0.5)}
+.foot a{color:var(--gold-light)}
+@media(prefers-reduced-motion:reduce){.btn,.do,.tcard{transition:none}}
 </style>
 </head>
 <body>
 
-<nav>
-  <a class="nav-mark" href="#hero">PHIL<span>_</span>MYINT</a>
-  <ul class="nav-links">
-    <li><a href="#ecosystem">Ecosystem</a></li>
-    <li><a href="#thesis">Thesis</a></li>
-    <li><a href="#book">Books</a></li>
-    <li><a href="#track">Track Record</a></li>
-    <li><a href="#proof">Proof</a></li>
-    <li><a href="#creds">Credentials</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-status"><span class="pulse-dot"></span>SYSTEMS NOMINAL · BNE UTC+10</div>
+<nav class="nav">
+  <div class="nav-in">
+    <a class="nav-brand" href="/"><img src="/favicon.svg" alt=""><span>Phil Myint</span></a>
+    <ul class="nav-links">
+      <li><a href="#delivery">Delivery</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a class="nav-cta" href="#contact">Available for contract</a></li>
+    </ul>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div>
-    <div class="hero-eyebrow">Founder · The ZenCloud Ecosystem · Est. 2015</div>
-    <h1 class="hero-h1">Strategy.<br>Delivery.<br><em>Architecture.</em></h1>
-    <p class="hero-sub">Most enterprises run tomorrow's ambitions on yesterday's architecture. I close that gap. <strong>ZenCloud Advisory</strong> sets direction. <strong>StudioSix</strong> ships it. <strong>ZenCloud Velocity</strong> keeps it honest.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-volt" href="#ecosystem">Explore the Ecosystem</a>
-      <a class="btn btn-ghost" href="https://velocityarchitectureframework.com/" target="_blank" rel="noopener noreferrer">Read ZenCloud Velocity</a>
+<header>
+  <img class="oa-wm" src="/oa-mark.png" alt="" aria-hidden="true">
+  <div class="hero">
+    <span class="avail"><span class="dot"></span>Available &mdash; contract EA &amp; SA engagements</span>
+    <h1>Architecture that enables execution.</h1>
+    <p class="hero-lead">I&rsquo;m <strong>Phil Myint</strong> &mdash; an enterprise and solution architect with more than three decades turning complex cloud, security and transformation programmes into <strong>governed, executable outcomes</strong>. I don&rsquo;t deliver presentations. I deliver architecture that teams can actually build.</p>
+    <p class="hero-role">Enterprise &amp; Solution Architecture &middot; Governance &middot; AI &middot; Brisbane &amp; Remote</p>
+    <div class="ctas">
+      <a class="btn gold" href="https://www.linkedin.com/in/pmyint" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn ghost" href="#delivery">See the delivery record</a>
     </div>
   </div>
+</header>
 
-  <div class="term">
-    <div class="term-bar">
-      <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-      <span class="term-title">zencloud — ecosystem · founder@bne</span>
-    </div>
-    <div class="term-body" id="termBody"></div>
+<div class="stats">
+  <div class="stats-in">
+    <div class="stat"><b>30+</b><span>years in enterprise tech</span></div>
+    <div class="stat"><b>4M&rarr;25M</b><span>users scaled on one platform</span></div>
+    <div class="stat"><b>1,300+</b><span>users migrated, zero disruption</span></div>
+    <div class="stat"><b>25%+</b><span>operational cost reduction</span></div>
+    <div class="stat"><b>50+</b><span>sites &middot; 14 data centres</span></div>
   </div>
-</section>
+</div>
 
-<!-- METRICS -->
-<section id="metrics">
-  <div class="metrics-inner">
-    <div class="metric reveal">
-      <div class="metric-num"><span data-count="30">0</span><b>+</b></div>
-      <div class="metric-label">Years in enterprise tech</div>
-    </div>
-    <div class="metric reveal d1">
-      <div class="metric-num"><span data-count="3">0</span></div>
-      <div class="metric-label">Ventures · One ecosystem</div>
-    </div>
-    <div class="metric reveal d2">
-      <div class="metric-num"><span data-count="2">0</span></div>
-      <div class="metric-label">Books · Amazon Q4 2026</div>
-    </div>
-    <div class="metric reveal d3">
-      <div class="metric-num"><span data-count="62">0</span></div>
-      <div class="metric-label">Certifications held</div>
-    </div>
-  </div>
-</section>
-
-<!-- ECOSYSTEM -->
-<section id="ecosystem">
+<section class="sec">
   <div class="wrap">
-    <span class="sec-tag reveal">01 — The Ecosystem</span>
-    <h2 class="sec-h reveal">Three ventures,<br>one <em>operating model.</em></h2>
-    <div class="eco-grid">
-      <div class="card reveal">
-        <div class="card-glow"></div>
-        <span class="card-tag live">● Live</span>
-        <div class="card-role">Strategy — Client Entry Point</div>
-        <div class="card-title">ZenCloud Advisory</div>
-        <div class="card-body">The enterprise architecture and cloud advisory practice behind the ZenCloud Velocity ecosystem. Architecture advisory, cloud governance, and senior leadership. All clients engage here first.</div>
-        <a class="card-link" href="https://zencloud.com.au/" target="_blank" rel="noopener noreferrer">zencloud.com.au →</a>
-      </div>
-      <div class="card reveal d1">
-        <div class="card-glow"></div>
-        <span class="card-tag live">● Live</span>
-        <div class="card-role">Delivery — AI Engine</div>
-        <div class="card-title">StudioSix</div>
-        <div class="card-body">ZenCloud Advisory's architecture-led AI delivery engine. Approved mandates become governed artefacts, traceable decisions, delivery visibility, and controlled handover — AI-accelerated, architect-governed.</div>
-        <a class="card-link" href="https://studiosix.com.au/" target="_blank" rel="noopener noreferrer">studiosix.com.au →</a>
-      </div>
-      <div class="card reveal d2">
-        <div class="card-glow"></div>
-        <span class="card-tag live">● Public</span>
-        <div class="card-role">Architecture — The Framework</div>
-        <div class="card-title">ZenCloud Velocity</div>
-        <div class="card-body">The public knowledge base for decision-first architecture: formal specification, six viewpoints, diagnostics, templates, research, and practitioner publications. Open method — because a framework you can't inspect is just marketing.</div>
-        <a class="card-link" href="https://velocityarchitectureframework.com/" target="_blank" rel="noopener noreferrer">velocityarchitectureframework.com →</a>
-      </div>
-    </div>
-    <div class="eco-flow reveal d3">
-      <b>Advisory</b> sets direction <span class="arrow">→</span> <b>StudioSix</b> delivers it <span class="arrow">→</span> <b>ZenCloud Velocity</b> governs the method
-    </div>
+    <p class="eyebrow">The problem I solve</p>
+    <h2>Programmes don&rsquo;t fail on technology. They fail on architecture.</h2>
+    <p class="intro">Cloud, AI and transformation programmes rarely fail because of the technology. They fail because the architecture cannot support the decisions being made &mdash; ownership fragments, governance lives in documents instead of operating practice, and delivery teams inherit a target no one can actually build. I fix that: decision rights defined, governance that operates in practice, business and technology strategy aligned, and an executable target architecture delivery teams can implement.</p>
+    <p class="pledge">I don&rsquo;t produce architectural presentations. I build architecture that enables execution.</p>
   </div>
 </section>
 
-<!-- THESIS -->
-<section id="thesis">
+<section class="sec alt" id="delivery">
   <div class="wrap">
-    <div class="thesis-grid">
-      <div class="thesis-left reveal">
-        <span class="sec-tag">02 — The Thesis</span>
-        <h2 class="sec-h">Architecture at the speed of the <em>decision.</em></h2>
-        <p class="thesis-note">AI didn't change what good architecture is. It changed the price of not having it. The enterprises that win the next decade will be the ones whose decisions — and the systems behind them — can move at velocity without losing the audit trail.</p>
-      </div>
-      <div class="principles">
-        <div class="principle reveal">
-          <div class="pr-num">/01</div>
-          <div>
-            <div class="pr-title">Decision-first, not diagram-first</div>
-            <div class="pr-body">The unit of architecture is the decision: who made it, on what evidence, with what trade-offs. ZenCloud Velocity structures the practice around six viewpoints — direction, decision, truth, velocity, rhythm, and practitioner integrity.</div>
-          </div>
-        </div>
-        <div class="principle reveal d1">
-          <div class="pr-num">/02</div>
-          <div>
-            <div class="pr-title">Strategy that doesn't ship is fiction</div>
-            <div class="pr-body">No hundred-page decks that die in a drawer. Every mandate that leaves Advisory enters StudioSix as governed delivery — traceable decisions, controlled artefacts, clean handover. If it can't survive contact with production, it doesn't leave the room.</div>
-          </div>
-        </div>
-        <div class="principle reveal d2">
-          <div class="pr-num">/03</div>
-          <div>
-            <div class="pr-title">AI-accelerated, architect-governed</div>
-            <div class="pr-body">AI is the delivery engine, not the decision-maker. StudioSix pairs AI acceleration with architectural governance, so speed never comes at the cost of accountability. That pairing is the whole point.</div>
-          </div>
-        </div>
-        <div class="principle reveal d3">
-          <div class="pr-num">/04</div>
-          <div>
-            <div class="pr-title">Publish the method, openly</div>
-            <div class="pr-body">The framework, its specification, diagnostics, templates, and the research behind it are public at velocityarchitectureframework.com. Thirty years of practice, written down where anyone can test it.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOK -->
-<section id="book">
-  <div class="wrap">
-    <div class="book-grid">
-      <div class="reveal">
-        <span class="sec-tag">03 — The Books</span>
-        <h2 class="sec-h">Written. Complete.<br>On <em>Amazon Q4 2026.</em></h2>
-        <p class="book-quote">Two complete works on the discipline — <b>the full argument</b> and <b>the field guide</b>. Publishing on Amazon, Q4 2026.</p>
-      </div>
-      <div class="book-facts reveal d1">
-        <div class="bf">
-          <div class="bf-k">The Argument</div>
-          <div class="bf-v"><b>Where Architecture Truly Creates Value</b> — the complete case for decision-first architecture, fifty chapters from foreword to close.</div>
-        </div>
-        <div class="bf">
-          <div class="bf-k">The Field Guide</div>
-          <div class="bf-v"><b>Reading the Map — A Beginner's Guide to Enterprise Architecture</b> — the on-ramp for practitioners and leaders entering the discipline.</div>
-        </div>
-        <div class="bf">
-          <div class="bf-k">Alongside them</div>
-          <div class="bf-v"><b>Thought Series</b> long-form essays, <b>Signal</b> practitioner observations, and a research library — all in the ZenCloud Velocity public knowledge base.</div>
-        </div>
-        <div class="bf">
-          <div class="bf-k">Release</div>
-          <div class="bf-v"><b>Amazon, Q4 2026</b> — watch for the titles.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRACK -->
-<section id="track">
-  <div class="wrap">
-    <span class="sec-tag reveal">04 — Track Record</span>
-    <h2 class="sec-h reveal">Built across<br><em>six continents.</em></h2>
+    <p class="eyebrow">Delivery track record</p>
+    <h2>Shipped outcomes, not slideware.</h2>
+    <p class="intro">A sample of engagements where architecture had to survive contact with production &mdash; regulated environments, national scale, live cutovers.</p>
     <div class="track">
-      <div class="t-row reveal">
-        <div class="t-period">2015 → NOW</div>
-        <div>
-          <div class="t-title">Founder &amp; Principal Architect — The ZenCloud Ecosystem</div>
-          <div class="t-org">ZENCLOUD ADVISORY · STUDIOSIX · ZENCLOUD VELOCITY · BRISBANE · ABN REGISTERED</div>
-        </div>
-        <div class="chips">
-          <span class="chip">Advisory</span>
-          <span class="chip">AI Delivery</span>
-          <span class="chip">Framework</span>
-        </div>
+      <div class="tcard">
+        <span class="sector">Public sector &middot; Queensland Government</span>
+        <h3>Enterprise architecture governance</h3>
+        <p>Enterprise architecture governance across major infrastructure and digital transformation programmes. Defined target-state architectures, technology roadmaps and solution standards, acting as Design Authority so investment aligned with enterprise, security and operational requirements.</p>
+        <span class="metric">Design Authority &middot; target-state architecture &middot; roadmaps</span>
       </div>
-      <div class="t-row reveal d1">
-        <div class="t-period">2016 → 2019</div>
-        <div>
-          <div class="t-title">Global Design Authority — Security &amp; Software</div>
-          <div class="t-org">GLOBAL · 50+ SITES · 14 DATA CENTRES · 4 CONTINENTS</div>
-        </div>
-        <div class="chips">
-          <span class="chip">Cloud</span>
-          <span class="chip">Security</span>
-          <span class="chip">M&amp;A</span>
-        </div>
+      <div class="tcard">
+        <span class="sector">Education &middot; Cybersecurity &amp; network</span>
+        <h3>Statewide security uplift &amp; SD-WAN</h3>
+        <p>Led the architecture for a statewide cybersecurity uplift and SD-WAN transformation. Aligned enterprise security to ISO 27001, Essential Eight and SABSA while governing the rollout of security platforms across hundreds of education sites.</p>
+        <span class="metric">ISO 27001 &middot; Essential Eight &middot; SABSA &middot; hundreds of sites</span>
       </div>
-      <div class="t-row reveal d1">
-        <div class="t-period">2010 → 2015</div>
-        <div>
-          <div class="t-title">Global Lead Solutions Architect &amp; Delivery Manager</div>
-          <div class="t-org">APAC · EMEA · NORTH AMERICA · TEAMS OF 40 ARCHITECTS &amp; ENGINEERS</div>
-        </div>
-        <div class="chips">
-          <span class="chip">Enterprise</span>
-          <span class="chip">Delivery</span>
-          <span class="chip">Global</span>
-        </div>
+      <div class="tcard">
+        <span class="sector">Technology services &middot; Cloud &amp; operations</span>
+        <h3>Voice migration &amp; FinOps</h3>
+        <p>Led the migration of more than 1,300 users to Microsoft Teams Voice with zero service disruption. Applied FinOps practice and Azure Monitor optimisation to reduce operational monitoring costs by more than 25%.</p>
+        <span class="metric">1,300+ users &middot; zero disruption &middot; 25%+ cost cut</span>
       </div>
-      <div class="t-row reveal d2">
-        <div class="t-period">1999 → 2004</div>
-        <div>
-          <div class="t-title">Consulting — Finance, Investment, Law &amp; Government</div>
-          <div class="t-org">LONDON · GLOBAL BANKS · INTERNATIONAL LAW FIRMS · GOVERNMENT AGENCIES</div>
-        </div>
-        <div class="chips">
-          <span class="chip">Finance</span>
-          <span class="chip">Law</span>
-          <span class="chip">Government</span>
-        </div>
+      <div class="tcard">
+        <span class="sector">Global security &amp; software</span>
+        <h3>Architecture at hyperscale</h3>
+        <p>Provided architectural leadership across 50+ sites and 14 data centres. Standardised enterprise architecture and deployment patterns that enabled a global web security platform to scale from 4 million to 25 million protected users.</p>
+        <span class="metric">50+ sites &middot; 14 data centres &middot; 4M&rarr;25M users</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROOF -->
-<section id="proof">
+<section class="sec">
   <div class="wrap">
-    <span class="sec-tag reveal">05 — The Proof</span>
-    <h2 class="sec-h reveal">The work,<br>at <em>scale.</em></h2>
-    <p class="proof-lede reveal d1">Executives don't keep an architect in the room for a decade out of charity. From 2010 to the exit at Symantec–Broadcom, the same two executives ran the businesses — Kuala Lumpur to Silicon Valley — and <strong>I architected what made them run.</strong> After that, the work spoke for itself: a consultancy's 8× run, a state's security uplift, a government portfolio. <strong>Companies don't matter. The work does.</strong> Independently confirmable — and since 2015, the name on the door has been mine.</p>
-    <div class="eco-grid reveal d2">
-      <div class="card">
-        <div class="card-glow"></div>
-        <div class="card-role">The Platform</div>
-        <div class="card-title">Scaled a security platform to the edge of the internet</div>
-        <div class="card-body">Scaled from 4 million to 25 million seats — fifteen hyper-converged edge locations stood up across Europe, the US, Australia and New Zealand in nine months. The capacity behind US$100M+ in annual revenue.</div>
-      </div>
-      <div class="card">
-        <div class="card-glow"></div>
-        <div class="card-role">The Exit</div>
-        <div class="card-title">Readied a global security company for acquisition</div>
-        <div class="card-body">Zero-disruption Microsoft 365 migration for a global workforce. SOC 2 and ISO 27001 across a regulated estate. The alignment programs ran through my designs — the company exited in 2016.</div>
-      </div>
-      <div class="card">
-        <div class="card-glow"></div>
-        <div class="card-role">The Consolidation</div>
-        <div class="card-title">Collapsed a global data-centre estate into cloud</div>
-        <div class="card-body">Twenty data centres retired worldwide and a full developer population moved into secure Azure. US$30M+ saved per annum — US$35M+ annualised across the program portfolio. Executive references on request.</div>
-      </div>
-      <div class="card">
-        <div class="card-glow"></div>
-        <div class="card-role">The Transformation</div>
-        <div class="card-title">Took a regional services business global</div>
-        <div class="card-body">Architected the shift from an Australian commodity service into a global shared-services operation — run from Kuala Lumpur across APAC, EMEA and North America. 100+ enterprise customers. 250+ staff. Most of the world's top mining groups on the books.</div>
-      </div>
-      <div class="card">
-        <div class="card-glow"></div>
-        <div class="card-role">The Scale-Up</div>
-        <div class="card-title">Principal architect inside an 8× growth run</div>
-        <div class="card-body">$1.2M to $10M+ ARR in four years. 1,300+ users migrated to Teams Voice with zero service disruption. 25%+ sustained reduction in monitoring costs through FinOps rationalisation. The architecture held while the business multiplied.</div>
-      </div>
-      <div class="card">
-        <div class="card-glow"></div>
-        <div class="card-role">The Uplift</div>
-        <div class="card-title">Hardened a state education system</div>
-        <div class="card-body">Lead architect for a state-wide cybersecurity and network-security uplift — security posture defined, investment approved through whole-of-government frameworks, SD-WAN and enterprise security platforms governed to Essential Eight alignment.</div>
-      </div>
-      <div class="card" style="grid-column: 1 / -1;">
-        <div class="card-glow"></div>
-        <div class="card-role">ZenCloud Advisory — Now</div>
-        <div class="card-title">Design authority for government and enterprise portfolios</div>
-        <div class="card-body">The escalation point for cross-domain architectural decisions across migration, modernisation, data and compliance — multi-decade retention strategy, privacy and threat assessments, every decision governed through executive forums. This is the standard every ZenCloud engagement inherits.</div>
-      </div>
-    </div>
-    <div class="proof-quote reveal d3">
-      <p class="pq-text">"Phil is the go-to person for high-value, business-critical projects. I have engaged him across Australia, Asia, and the USA. He takes accountability for quality, timelines, and outcomes."</p>
-      <div class="pq-attr">FORMER SVP MANAGED SERVICES, ABB/VENTYX · PROGRAM DIRECTOR, SYMANTEC · DIRECTOR OF OPERATIONS, PLANET6</div>
+    <p class="eyebrow">How I work</p>
+    <h2>Four things I bring to a delivery.</h2>
+    <div class="do-grid">
+      <div class="do"><p class="n">/01</p><h3>Decision rights</h3><p>Who owns which decision, on what evidence, with what trade-offs &mdash; so ownership stops fragmenting.</p></div>
+      <div class="do"><p class="n">/02</p><h3>Governance that operates</h3><p>Governance as working practice, not documentation &mdash; run through the forums where decisions actually happen.</p></div>
+      <div class="do"><p class="n">/03</p><h3>Executable target</h3><p>A target architecture delivery teams can build against, with the sequencing and standards to get there.</p></div>
+      <div class="do"><p class="n">/04</p><h3>Independent authority</h3><p>Vendor-neutral architectural leadership that optimises for the enterprise&rsquo;s outcome, not a supplier&rsquo;s.</p></div>
     </div>
   </div>
 </section>
 
-<!-- CREDENTIALS -->
-<section id="creds">
+<section class="sec alt" id="experience">
   <div class="wrap">
-    <span class="sec-tag reveal">06 — Credentials</span>
-    <h2 class="sec-h reveal">Certified across<br>the <em>full stack.</em></h2>
-    <div class="creds-grid">
-      <div class="cred reveal">
-        <div class="cred-cat">Cloud &amp; Architecture</div>
-        <ul class="cred-list">
-          <li><b>Microsoft Certified: Azure Solutions Architect Expert</b><span class="yr">2023–2026</span></li>
-          <li>AZ-305 — Designing Azure Infrastructure Solutions<span class="yr">2023</span></li>
-          <li>AWS Knowledge: Architecting · Cloud Practitioner Essentials<span class="yr">2024</span></li>
-          <li>AWS Security Fundamentals<span class="yr">2025</span></li>
-          <li>Databricks Platform Architect — Azure &amp; AWS</li>
-        </ul>
-      </div>
-      <div class="cred reveal d1">
-        <div class="cred-cat">Security &amp; Governance</div>
-        <ul class="cred-list">
-          <li><b>ISO/IEC 27001 Information Security Associate</b></li>
-          <li>Fortinet FCA / FCF Cybersecurity<span class="yr">2024–2026</span></li>
-          <li>Palo Alto PSE — Foundation · Strata · Software FW<span class="yr">2024</span></li>
-          <li>Microsoft Defender &amp; Sentinel Ninja<span class="yr">2023</span></li>
-        </ul>
-      </div>
-      <div class="cred reveal d2">
-        <div class="cred-cat">Enterprise &amp; Delivery</div>
-        <ul class="cred-list">
-          <li><b>TOGAF® Certified</b> — v9.2 &amp; 10 aligned</li>
-          <li><b>CBA® — Certified Business Architect</b><span class="yr">2025–2028</span></li>
-          <li>Lean Six Sigma Green Belt · Scrum Master Certified</li>
-          <li>ITIL Foundation · PRINCE2® Foundation</li>
-          <li>Commvault · Veeam Professional · Orbus Infinity<span class="yr">2024–2025</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="creds-foot reveal d3">
-      <b>62 certifications earned</b> spanning cloud, security, data, enterprise architecture and delivery · DAMA Australia Member
-    </div>
-  </div>
-</section>
-
-<!-- FOUNDER -->
-<section id="founder">
-  <div class="wrap">
-    <div class="founder-grid">
-      <div class="reveal">
-        <span class="sec-tag">07 — The Founder</span>
-        <h2 class="sec-h">Phil<br><em>Myint.</em></h2>
-        <div class="route">
-          <b>Wellington</b> <span class="arrow">→</span> <b>London</b> <span class="arrow">→</span> <b>Brisbane</b> <span class="arrow">→</span> <b>The World</b>
+    <p class="eyebrow">Experience</p>
+    <h2>Three decades as a design authority.</h2>
+    <div class="exp-grid">
+      <ul class="exp-list">
+        <li><span class="role">Founder &amp; Principal Architect</span><span class="org">The Ordo Animi Group &middot; 2015&ndash;present</span></li>
+        <li><span class="role">Enterprise Architecture &amp; Design Authority</span><span class="org">Queensland Government</span></li>
+        <li><span class="role">Global Architecture &amp; Delivery Lead</span><span class="org">ABB Enterprise Software</span></li>
+        <li><span class="role">Global Design Authority</span><span class="org">Blue Coat &middot; Symantec &middot; Broadcom</span></li>
+      </ul>
+      <div class="exp-side">
+        <h3>Standards &amp; practice</h3>
+        <div class="chips">
+          <span class="chip">TOGAF</span><span class="chip">SABSA</span><span class="chip">ISO 27001</span>
+          <span class="chip">Essential Eight</span><span class="chip">Azure</span><span class="chip">AWS</span>
+          <span class="chip">FinOps</span><span class="chip">AI governance</span>
         </div>
-      </div>
-      <div class="founder-body reveal d1">
-        <p>I learned systems engineering in New Zealand by building systems. I sharpened it on London's trading floors — <strong>rooms where slow architecture costs real money by lunchtime.</strong> Now I operate from Australia to the world.</p>
-        <p>Thirty years. Fifty-plus countries. Six continents. Europe, the Americas, the Middle East, Australia — trading floors to national-scale platforms. <strong>I've seen every way architecture fails, and most of the ways it wins.</strong></p>
-        <p>I walk into a boardroom, read it, and deliver. The ZenCloud ecosystem is that skill, productised: an advisory practice, an AI delivery engine, and a published framework. <strong>Founder-led. Built for the long term.</strong></p>
+        <p class="sectors">Delivered across <b>government</b>, <b>financial services</b>, <b>mining &amp; energy</b>, <b>education</b>, <b>enterprise software</b> and <b>global technology</b> organisations.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="wrap">
-    <h2 class="contact-h reveal">I don't sell strategy.<br>I <em>ship it.</em></h2>
-    <p class="contact-sub reveal d1">Brisbane to the World · Europe · Americas · UAE</p>
-    <div class="contact-ctas reveal d2">
-      <a class="btn btn-volt" href="mailto:phil@zencloud.com.au">phil@zencloud.com.au</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/pmyint" target="_blank" rel="noopener noreferrer">LinkedIn — /in/pmyint</a>
-    </div>
-    <div class="eco-links reveal d3">
-      <a class="eco-link" href="https://zencloud.com.au/" target="_blank" rel="noopener noreferrer">ZenCloud</a>
-      <a class="eco-link" href="https://studiosix.com.au/" target="_blank" rel="noopener noreferrer">StudioSix</a>
-      <a class="eco-link" href="https://velocityarchitectureframework.com/" target="_blank" rel="noopener noreferrer">ZenCloud Velocity</a>
-      <a class="eco-link" href="https://www.linkedin.com/in/pmyint" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<section class="contact" id="contact">
+  <div class="contact-in">
+    <p class="eyebrow">Available now</p>
+    <h2>Open to contract EA &amp; SA engagements.</h2>
+    <p>Brisbane and remote. If you have a programme that needs architectural clarity before complexity becomes failure &mdash; let&rsquo;s talk.</p>
+    <div class="ctas">
+      <a class="btn gold" href="https://www.linkedin.com/in/pmyint" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <a class="btn ghost" href="mailto:informatio@ordoanimi.com">informatio@ordoanimi.com</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="fl">© 2026 ZenCloud Global Consultants · Phil Myint · Brisbane, Australia · ABN Registered</div>
-  <div class="fl">Strategy. Delivery. Architecture.</div>
+  <div class="foot">
+    <span class="tag">Clarity. Governance. Execution.</span>
+    <span class="copy">&copy; 2026 Phil Myint &middot; Ordo Animi &middot; Brisbane &amp; Global &middot; <a href="https://www.ordoanimi.com/">ordoanimi.com</a></span>
+  </div>
 </footer>
 
-<script>
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-  }, { threshold: 0.04, rootMargin: '0px 0px 12% 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  const cio = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      cio.unobserve(e.target);
-      const el = e.target, target = +el.dataset.count, dur = 1200, t0 = performance.now();
-      (function tick(t) {
-        const k = Math.min((t - t0) / dur, 1);
-        el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
-        if (k < 1) requestAnimationFrame(tick);
-      })(t0);
-    });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
-
-  const lines = [
-    { html: '<span class="p">founder@zencloud</span>:~$ zencloud --ecosystem', t: 0 },
-    { html: '<span class="c">▸ strategy</span>   ZenCloud Advisory <span class="ok">[live · client entry point]</span>', t: 600 },
-    { html: '<span class="c">▸ delivery</span>   StudioSix <span class="ok">[live · AI delivery engine]</span>', t: 1100 },
-    { html: '<span class="c">▸ framework</span>  ZenCloud Velocity <span class="ok">[public knowledge base]</span>', t: 1600 },
-    { html: '<span class="c">▸ books</span>      2 complete <span class="a">[Amazon · Q4 2026]</span>', t: 2100 },
-    { html: '<span class="c">▸ founded</span>    2015 · founder-led · ABN registered', t: 2600 },
-    { html: '<span class="c">▸ base</span>       Brisbane, Australia · UTC+10', t: 3100 },
-    { html: '<span class="ok">✓ all systems building</span> <span class="caret"></span>', t: 3700 }
-  ];
-  const tb = document.getElementById('termBody');
-  lines.forEach(l => setTimeout(() => {
-    tb.querySelectorAll('.caret').forEach(c => c.remove());
-    const s = document.createElement('span');
-    s.className = 'ln'; s.innerHTML = l.html;
-    tb.appendChild(s);
-  }, 900 + l.t));
-</script>
 </body>
 </html>
