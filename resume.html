@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phil Myint &mdash; Résumé | Enterprise &amp; Solution Architect</title>
+<meta name="description" content="Résumé of Phil Myint — enterprise and solution architect, technology strategy and AI governance. 30+ years delivering governed, executable outcomes. Available for contract EA/SA and advisory.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://myint.ordoanimi.com/resume">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+  --ink:#0b0e11; --body:#26302b; --muted:#5a6354;
+  --gold:#b8924e; --gold-deep:#8c6a2c; --gold-light:#d4b36a;
+  --paper:#ffffff; --panel:#faf7ef; --rule:#e4dccb; --rule-strong:#c9bfa6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#ece7dc;color:var(--body);font-family:'DM Sans',system-ui,sans-serif;font-size:14px;line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+a{color:var(--gold-deep);text-decoration:none}
+
+/* screen toolbar */
+.toolbar{position:sticky;top:0;z-index:10;background:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:0.7rem 1.2rem;flex-wrap:wrap}
+.toolbar a,.toolbar button{font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.04em;cursor:pointer}
+.toolbar .back{color:var(--gold-light)}
+.toolbar .print{background:var(--gold);color:var(--ink);border:none;padding:0.5rem 1rem;border-radius:5px;font-weight:500}
+.toolbar .print:hover{background:var(--gold-light)}
+
+/* page sheet (A4) */
+.sheet{max-width:820px;margin:1.5rem auto;background:var(--paper);box-shadow:0 6px 30px rgba(11,14,17,0.14);padding:44px 52px 48px}
+
+/* header */
+.rhead{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:20px}
+.rhead .name{font-family:'Playfair Display',Georgia,serif;font-size:34px;font-weight:700;letter-spacing:0.01em;color:var(--ink);line-height:1}
+.rhead .title{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.06em;color:var(--gold-deep);margin-top:8px;text-transform:uppercase}
+.rhead .contact{margin-top:12px;font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:0.35rem 1.1rem}
+.rhead .contact b{color:var(--ink);font-weight:600}
+.rhead .avail{display:inline-block;margin-top:10px;font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.05em;color:var(--gold-deep);border:1px solid var(--rule-strong);border-radius:4px;padding:3px 8px}
+
+/* sections */
+.sec{margin-top:22px}
+.sec > h2{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-deep);padding-bottom:5px;border-bottom:1px solid var(--rule);margin-bottom:12px}
+.summary{font-size:13.5px;line-height:1.6;color:var(--body)}
+.summary strong{color:var(--ink)}
+
+/* expertise grid */
+.exp-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 2rem}
+.exp-cols .row{display:grid;grid-template-columns:130px 1fr;gap:0.6rem;font-size:12.5px;padding:3px 0}
+.exp-cols .k{font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--gold-deep);padding-top:2px}
+.exp-cols .v{color:var(--body)}
+
+/* experience */
+.job{margin-bottom:16px;break-inside:avoid}
+.job-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.job-role{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--ink)}
+.job-org{font-weight:600;color:var(--body)}
+.job-dates{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);white-space:nowrap}
+.job-loc{font-family:'DM Mono',monospace;font-size:10.5px;color:var(--muted);margin-top:1px}
+.job-desc{font-size:12.8px;color:var(--body);margin:6px 0}
+.job ul{list-style:none;margin:6px 0 0}
+.job li{position:relative;padding-left:16px;font-size:12.8px;line-height:1.5;margin-bottom:5px;color:var(--body)}
+.job li::before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;background:var(--gold);border-radius:1px}
+.job li b{color:var(--ink);font-weight:600}
+.tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold-deep)}
+
+/* certs */
+.certs{font-size:12.5px;line-height:1.7;color:var(--body)}
+.certs b{color:var(--ink)}
+.certs .count{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold-deep);margin-top:6px}
+
+.rfoot{margin-top:24px;padding-top:12px;border-top:1px solid var(--rule);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem}
+
+@media(max-width:640px){.sheet{padding:28px 22px}.exp-cols{grid-template-columns:1fr}.rhead .name{font-size:28px}}
+
+@media print{
+  body{background:#fff}
+  .toolbar{display:none}
+  .sheet{box-shadow:none;margin:0;max-width:none;padding:0}
+  @page{size:A4;margin:14mm 15mm}
+  .job,.sec{break-inside:avoid}
+  a{color:var(--ink)}
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a class="back" href="/">&larr; myint.ordoanimi.com</a>
+  <button class="print" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="sheet">
+  <header class="rhead">
+    <div class="name">Phil Myint</div>
+    <div class="title">Enterprise &amp; Solution Architect &middot; Technology Strategy &amp; AI Governance</div>
+    <div class="contact">
+      <span>Greater Brisbane Area, Australia &middot; Remote-friendly</span>
+      <span><b>LinkedIn</b> linkedin.com/in/pmyint</span>
+      <span><b>Web</b> ordoanimi.com</span>
+    </div>
+    <span class="avail">Available &mdash; contract EA/SA &amp; advisory engagements</span>
+  </header>
+
+  <section class="sec">
+    <h2>Profile</h2>
+    <p class="summary">Enterprise and solution architect with <strong>30+ years</strong> across government, financial services, mining &amp; energy, education, enterprise software and global technology. Cloud, AI and transformation programmes rarely fail on technology &mdash; they fail because the architecture cannot support the decisions being made. I define decision rights, build governance that operates in practice, align business and technology strategy, and deliver an <strong>executable target architecture</strong> that delivery teams can actually implement. <strong>Clarity. Governance. Execution.</strong></p>
+  </section>
+
+  <section class="sec">
+    <h2>Core Expertise</h2>
+    <div class="exp-cols">
+      <div class="row"><span class="k">Architecture</span><span class="v">Enterprise &amp; solution architecture, target-state architecture, Design Authority, TOGAF, SABSA</span></div>
+      <div class="row"><span class="k">Strategy &amp; Gov</span><span class="v">Technology strategy, AI governance, decision rights, governance operating models</span></div>
+      <div class="row"><span class="k">Security</span><span class="v">ISO&nbsp;27001, Essential Eight, SD-WAN, enterprise &amp; network security architecture</span></div>
+      <div class="row"><span class="k">Cloud &amp; Data</span><span class="v">Azure, AWS, Databricks, FinOps, cloud migration, M365, Azure Monitor</span></div>
+      <div class="row"><span class="k">Delivery</span><span class="v">Programme architecture, delivery leadership, PRINCE2, ITIL, Scrum, Lean Six Sigma</span></div>
+      <div class="row"><span class="k">Sectors</span><span class="v">Government, financial services, mining &amp; energy, education, enterprise software</span></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-role">Founder &amp; Principal Advisor</span> &mdash; <span class="job-org">The Ordo Animi Group</span></div>
+        <div class="job-dates">May 2015 &ndash; Present</div>
+      </div>
+      <div class="job-loc">Brisbane, Australia &middot; Remote</div>
+      <p class="job-desc">An enterprise architecture and technology strategy practice partnering directly with CIOs, CTOs and IT executives as an embedded architectural authority &mdash; independent leadership across complex transformation, ensuring technology decisions align with business strategy, governance, security and long-term operational outcomes.</p>
+      <ul>
+        <li><b>Public sector &mdash; Queensland Government.</b> Enterprise architecture governance across major infrastructure and digital transformation programmes. Defined target-state architectures, technology roadmaps and solution standards, acting as Design Authority so investment aligned with enterprise, security and operational requirements.</li>
+        <li><b>Education &mdash; cybersecurity &amp; network architecture.</b> Led the architecture for a statewide cybersecurity uplift and SD-WAN transformation. Aligned enterprise security to ISO&nbsp;27001, Essential Eight and SABSA while governing the rollout of security platforms across hundreds of education sites.</li>
+        <li><b>Technology services &mdash; cloud &amp; operations.</b> Led the migration of <b>1,300+ users</b> to Microsoft Teams Voice with zero service disruption. Applied FinOps and Azure Monitor optimisation to cut operational monitoring costs by <b>more than 25%</b>.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-role">Global Design Authority &mdash; Security &amp; Software</span></div>
+        <div class="job-dates">2016 &ndash; 2019</div>
+      </div>
+      <div class="job-loc">Blue Coat &middot; Symantec &middot; Broadcom &middot; Global (4 continents)</div>
+      <ul>
+        <li>Architectural leadership across <b>50+ sites and 14 data centres</b>. Standardised enterprise architecture and deployment patterns that enabled a global web security platform to scale from <b>4 million to 25 million</b> protected users.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-role">Global Lead Solutions Architect &amp; Delivery Manager</span></div>
+        <div class="job-dates">2010 &ndash; 2015</div>
+      </div>
+      <div class="job-loc">ABB Enterprise Software &middot; APAC, EMEA &amp; North America</div>
+      <ul>
+        <li>Led global enterprise architecture and delivery, directing teams of up to <b>40 architects and engineers</b> across a multi-region enterprise software portfolio.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div><span class="job-role">Consulting &mdash; Finance, Investment, Law &amp; Government</span></div>
+        <div class="job-dates">1999 &ndash; 2004</div>
+      </div>
+      <div class="job-loc">London &middot; Global banks, international law firms, government agencies</div>
+      <ul>
+        <li>Technology and architecture consulting to global banks, international law firms and government agencies &mdash; systems built and sharpened on London&rsquo;s trading floors, where slow architecture costs real money by lunchtime.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Certifications</h2>
+    <p class="certs">
+      <b>Cloud &amp; architecture:</b> Microsoft Certified Azure Solutions Architect Expert (AZ-305) &middot; AWS (Architecting, Cloud Practitioner, Security Fundamentals) &middot; Databricks Platform Architect (Azure &amp; AWS) &middot; TOGAF &middot; SABSA<br>
+      <b>Security &amp; governance:</b> ISO/IEC&nbsp;27001 &middot; Fortinet FCA/FCF &middot; Palo Alto PSE &middot; Microsoft Defender &amp; Sentinel<br>
+      <b>Business &amp; delivery:</b> CBA Certified Business Architect &middot; Lean Six Sigma Green Belt &middot; Scrum Master &middot; ITIL Foundation &middot; PRINCE2 Foundation &middot; DAMA Australia Member
+      <span class="count">62 certifications earned across cloud, security, data, enterprise architecture and delivery.</span>
+    </p>
+  </section>
+
+  <div class="rfoot">
+    <span>PHIL MYINT &middot; ENTERPRISE &amp; SOLUTION ARCHITECT</span>
+    <span>CLARITY. GOVERNANCE. EXECUTION.</span>
+  </div>
+</div>
+
+</body>
+</html>
