@@ -43,17 +43,36 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .nav-links a:hover{color:var(--gold-light)}
 .nav-cta{background:var(--gold);color:var(--ink)!important;padding:0.5rem 1rem;border-radius:5px;font-weight:600;font-size:0.82rem}
 .nav-cta:hover{background:var(--gold-light)}
-@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+/* hide the LIs, not just their anchors - orphaned LIs still consumed the flex gap
+   and squeezed the CTA into a two-line overflow */
+@media(max-width:640px){
+  .nav-links li:not(:last-child){display:none}
+  .nav-in{gap:0.75rem}
+  .nav-brand span{white-space:nowrap;font-size:1rem}
+  .nav-cta{white-space:nowrap;padding:0.45rem 0.8rem;font-size:0.76rem}
+}
 
 /* brand banner cover */
 .cover{position:relative;background:var(--ink-2);overflow:hidden;border-bottom:1px solid rgba(212,179,106,0.18)}
 .cover::before{content:'';position:absolute;inset:0;background:url('/assets/hero-building.jpg') right center/cover no-repeat;opacity:0.5;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 45%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 45%,#000 100%)}
-.cover::after{content:'';position:absolute;left:0;top:0;bottom:0;width:36%;background:url('/assets/hero-lines.png') left center/cover no-repeat;opacity:0.14;pointer-events:none}
+/* blueprint linework, drawn in CSS. The old hero-lines.png had the word
+   "ENTERPRISE" and a stray gold glyph baked in, which ghosted through. */
+.cover::after{content:'';position:absolute;left:0;top:0;bottom:0;width:42%;pointer-events:none;
+  background-image:
+    linear-gradient(to right, rgba(212,179,106,0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212,179,106,0.16) 1px, transparent 1px),
+    linear-gradient(to right, rgba(212,179,106,0.30) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212,179,106,0.30) 1px, transparent 1px);
+  background-size:26px 26px,26px 26px,130px 130px,130px 130px;
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,0.35) 55%,transparent 100%);
+  mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,0.35) 55%,transparent 100%)}
 .cover-in{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:2.6rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.5rem}
-.cover-logo{width:auto;height:132px;max-width:90%;object-fit:contain}
-.cover-tag{font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.22em;color:var(--gold-light);margin-top:0.3rem}
+.cover-logo{display:block;width:auto;height:124px;max-width:78%;object-fit:contain}
+.cover-tag{font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.22em;color:var(--gold-light);margin-top:0.6rem}
 .cover-place{font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.2em;color:rgba(235,228,210,0.55)}
-@media(max-width:560px){.cover-logo{height:104px}.cover-tag{font-size:0.68rem;letter-spacing:0.16em}}
+@media(max-width:560px){.cover-logo{height:92px;max-width:86%}.cover-tag{font-size:0.68rem;letter-spacing:0.16em}.cover::after{width:100%}}
+@media(prefers-reduced-motion:no-preference){.cover-logo{animation:coverFade .7s ease-out both}}
+@keyframes coverFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 
 /* hero */
 header{background:var(--ink);color:var(--paper);border-bottom:3px solid var(--gold);position:relative;overflow:hidden}
@@ -151,7 +170,7 @@ footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
 
 <section class="cover" aria-label="Ordo Animi">
   <div class="cover-in">
-    <img class="cover-logo" src="/assets/Primary_Logo.png" alt="Ordo Animi — Enterprise Architecture, AI Governance, Technology Strategy">
+    <img class="cover-logo" src="/assets/logo-wordmark.png" width="1400" height="652" alt="Ordo Animi">
     <p class="cover-tag">Clarity. Governance. Execution.</p>
     <p class="cover-place">Brisbane &middot; Global</p>
   </div>
