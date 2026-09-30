@@ -12,16 +12,17 @@
 <meta property="og:image" content="https://myint.ordoanimi.com/og-card.png">
 <meta property="og:type" content="profile">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/oa-tokens.css">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root{
-  --ink:#0b0e11; --ink-2:#07090b;
-  --paper:#faf7ef; --page:#f2ede0; --surface2:#ebe4d2;
-  --border:#ded7c4; --border2:#c9bfa6;
-  --body:#3d4536; --muted:#5a6354; --muted2:#6e7460;
-  --gold:#b8924e; --gold-deep:#96753a; --gold-light:#d4b36a;
+  --ink:var(--oa-ink); --ink-2:var(--oa-ink);
+  --paper:var(--oa-card); --page:var(--oa-page); --surface2:var(--oa-sunken);
+  --border:var(--oa-border); --border2:var(--oa-border-strong);
+  --body:var(--oa-body); --muted:var(--oa-muted); --muted2:#6e7460;
+  --gold:var(--oa-gold); --gold-deep:var(--oa-gold-deep); --gold-light:var(--oa-gold-light);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -33,7 +34,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(15,17,21,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,247,239,0.12)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(var(--oa-ink-rgb),0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,247,239,0.12)}
 .nav-in{max-width:1080px;margin:0 auto;padding:0 1.5rem;height:56px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .nav-brand{display:flex;align-items:center;gap:0.6rem;color:var(--paper)}
 .nav-brand img{width:26px;height:26px;border-radius:5px}
@@ -41,7 +42,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .nav-links{display:flex;gap:1.4rem;list-style:none;align-items:center}
 .nav-links a{font-size:0.84rem;color:var(--surface2)}
 .nav-links a:hover{color:var(--gold-light)}
-.nav-cta{background:var(--gold);color:var(--ink)!important;padding:0.5rem 1rem;border-radius:5px;font-weight:600;font-size:0.82rem}
+.nav-cta{background:var(--gold);color:var(--ink)!important;padding:0.5rem 1rem;border-radius:var(--oa-radius);font-weight:600;font-size:0.82rem}
 .nav-cta:hover{background:var(--gold-light)}
 /* hide the LIs, not just their anchors - orphaned LIs still consumed the flex gap
    and squeezed the CTA into a two-line overflow */
@@ -85,7 +86,7 @@ header .oa-wm{position:absolute;right:-5%;top:50%;transform:translateY(-50%);wid
 .hero-lead strong{color:var(--paper);font-weight:600}
 .hero-role{font-family:'DM Mono',monospace;font-size:0.82rem;letter-spacing:0.08em;color:var(--gold-light);margin-top:1.4rem}
 .ctas{display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:2.2rem}
-.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 1.5rem;border-radius:7px;font-weight:600;font-size:0.95rem;transition:all .18s}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 1.5rem;border-radius:var(--oa-radius);font-weight:600;font-size:0.95rem;transition:all .18s}
 .btn.gold{background:var(--gold);color:var(--ink)}
 .btn.gold:hover{background:var(--gold-light)}
 .btn.ghost{border:1px solid rgba(250,247,239,0.35);color:var(--paper)}
@@ -168,9 +169,9 @@ footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
   </div>
 </nav>
 
-<section class="cover" aria-label="Ordo Animi">
+<section class="cover" aria-label="OrdoAnimi">
   <div class="cover-in">
-    <img class="cover-logo" src="/assets/logo-wordmark.png" width="1400" height="652" alt="Ordo Animi">
+    <img class="cover-logo" src="/assets/logo-wordmark.png" width="1400" height="652" alt="OrdoAnimi">
     <p class="cover-tag">Clarity. Governance. Execution.</p>
     <p class="cover-place">Brisbane &middot; Global</p>
   </div>
@@ -294,7 +295,7 @@ footer{background:var(--ink-2);border-top:1px solid rgba(250,247,239,0.1)}
 <footer>
   <div class="foot">
     <span class="foot-brand"><img src="/favicon.svg" alt="" width="30" height="30"><span class="tag">Clarity. Governance. Execution.</span></span>
-    <span class="copy">&copy; 2026 Phil Myint &middot; Ordo Animi &middot; Brisbane &amp; Global &middot; <a href="https://www.ordoanimi.com/">ordoanimi.com</a></span>
+    <span class="copy">&copy; 2026 Phil Myint &middot; OrdoAnimi &middot; Brisbane &amp; Global &middot; <a href="https://www.ordoanimi.com/">ordoanimi.com</a></span>
   </div>
 </footer>
 

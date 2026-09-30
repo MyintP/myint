@@ -8,25 +8,26 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://myint.ordoanimi.com/resume">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/oa-tokens.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root{
-  --ink:#0b0e11; --body:#3d4536; --muted:#5a6354;
-  --gold:#b8924e; --gold-deep:#96753a; --gold-light:#d4b36a;
-  --paper:#faf7ef; --rule:#ded7c4; --rule-strong:#c9bfa6;
+  --ink:var(--oa-ink); --body:var(--oa-body); --muted:var(--oa-muted);
+  --gold:var(--oa-gold); --gold-deep:var(--oa-gold-deep); --gold-light:var(--oa-gold-light);
+  --paper:var(--oa-card); --rule:var(--oa-border); --rule-strong:var(--oa-border-strong);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#ece7dc;color:var(--body);font-family:'DM Sans',system-ui,sans-serif;font-size:13.5px;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{background:var(--oa-page);color:var(--body);font-family:'DM Sans',system-ui,sans-serif;font-size:13.5px;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 a{color:var(--gold-deep);text-decoration:none}
 
 .toolbar{position:sticky;top:0;z-index:10;background:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:0.7rem 1.2rem;flex-wrap:wrap}
 .toolbar a,.toolbar button{font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.04em;cursor:pointer}
 .toolbar .back{color:var(--gold-light)}
-.toolbar .print{background:var(--gold);color:var(--ink);border:none;padding:0.5rem 1rem;border-radius:5px;font-weight:500}
+.toolbar .print{background:var(--gold);color:var(--ink);border:none;padding:0.5rem 1rem;border-radius:var(--oa-radius);font-weight:500}
 .toolbar .print:hover{background:var(--gold-light)}
 
-.sheet{max-width:840px;margin:1.5rem auto;background:var(--paper);box-shadow:0 6px 30px rgba(15,17,21,0.14);padding:42px 50px 46px}
+.sheet{max-width:840px;margin:1.5rem auto;background:var(--paper);box-shadow:0 6px 30px rgba(var(--oa-ink-rgb),0.14);padding:42px 50px 46px}
 
 /* header */
 .rhead{display:grid;grid-template-columns:1fr auto;gap:1.5rem;border-bottom:2px solid var(--ink);padding-bottom:16px;margin-bottom:16px}
@@ -169,7 +170,7 @@ a{color:var(--gold-deep);text-decoration:none}
 
     <div class="job">
       <div class="job-head"><span class="job-role">Founder & Principal Consultant</span><span class="job-dates">2015 &ndash; Present</span></div>
-      <div class="job-org">Ordo Animi &middot; Brisbane, QLD</div>
+      <div class="job-org">OrdoAnimi &middot; Brisbane, QLD</div>
       <p class="job-intro">Independent consulting practice (ABN/GST registered). Engaged directly by government agencies and enterprise clients as Principal Solution Architect and Design Authority &mdash; defining target-state architectures, governing complex multi-vendor programs, leading architecture review bodies, and owning architectural outcomes through to production. From 2025, expanded into a public-facing practice: authoring a decision-first architecture framework and practitioner method, and a book codifying 30 years of delivery experience, while completing Anthropic's Claude Code and Claude 101 certification programs.</p>
       <ul>
         <li><b>Queensland Department of Education (2023):</b> served as WCF Solution Architect on the SME evaluation panel for a statewide Web Content Filtering procurement (QED115370, ~600,000 students, 1,258 schools) &mdash; co-authored the pilot viability analysis narrowing 4 shortlisted NGFW vendor pilots (Fortinet, Palo Alto) to 2, cutting projected pilot cost by roughly 50% and timeline by up to 22 weeks; also authored the pilot test strategy and vendor briefing materials. Reviewed and refined earlier MIIS/MIS 2.0 architecture and IAM documentation feeding into this procurement, and defined ServiceNow onboarding requirements for the successor filtering service. Separately led architecture and governance input for the department's wider cybersecurity and network security uplift, aligned to QGEA, ISM and Essential Eight.</li>
@@ -287,7 +288,7 @@ a{color:var(--gold-deep);text-decoration:none}
 
   <section class="sec">
     <h2>Published Work & Advisory</h2>
-    <p class="plain"><b>Book in progress:</b> Enterprise Architecture as a Functional Decision System &mdash; chapters published across an ongoing series, authored through the Ordo Animi practice.</p>
+    <p class="plain"><b>Book in progress:</b> Enterprise Architecture as a Functional Decision System &mdash; chapters published across an ongoing series, authored through the OrdoAnimi practice.</p>
     <p class="plain"><b>Angel Investor & Technical Advisor</b>, Func Ventures (2023&ndash;Present) &mdash; technical due diligence and architecture advisory for early-stage technology investments alongside Func Ventures Managing Partner Chris Birrell (formerly CIO Blue Coat Systems, SVP IT Symantec, GM Mincom Malaysia).</p>
   </section>
 
